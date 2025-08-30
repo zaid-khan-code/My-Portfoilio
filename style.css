@@ -22,12 +22,15 @@ header {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1;
 }
 
 .nav-bar {
+    position: fixed;
     width: 1400px;
     display: flex;
     justify-content: center;
+    z-index: 10;
 }
 
 /* 
@@ -78,7 +81,7 @@ header {
     align-items: center;
     gap: 10px;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .nav-2-navigation {
@@ -87,17 +90,20 @@ header {
     align-items: center;
     width: 532px;
     width: max-content;
-    gap: 10px;
+    gap: 7px;
 }
 
 .nav-ic-div-sp {
     font-size: 16px;
-    padding: 8px 16px;
+    padding: 9px 12px;
     border-radius: 8px;
-    background-color: rgba(0, 191, 255, 0.1);
+    background-color: #1fd1f91a;
 }
 
-
+header > span{
+    width: 16px;
+    height: 16px;
+}
 
 /* .nav-3-div-btn {
     padding: 8px 24px;
@@ -124,6 +130,8 @@ header {
     box-shadow: 0 0 100px rgba(0, 191, 255, 0.3);
     background-color: hsl(280 100% 70%)
 }
+
+/* Navbar End here */
 
 .main-sec-1 {
     background-color: rgb(11 14 19);

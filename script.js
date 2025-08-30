@@ -9,6 +9,7 @@ boxes.forEach(box => {
     box.style.top = randomTop + "px";
     box.style.left = randomLeft + "px";
 });
+ 
 
 
 //  And its Ends there 
