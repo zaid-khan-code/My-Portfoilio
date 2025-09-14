@@ -272,7 +272,8 @@ header>span {
     display: flex;
     flex-direction: column;
     text-align: center;
-    position: relative;z-index: 10;
+    position: relative;
+    z-index: 10;
     line-height: 1;
 }
 
@@ -344,7 +345,7 @@ header>span {
     font-weight: 500;
     cursor: pointer;
     transition: all 0.2s ease;
-    
+
 }
 
 
@@ -388,23 +389,130 @@ header>span {
     margin-top: 34px;
     text-align: center;
 }
-.color{
+
+.color {
     color: #1fd1f9;
-font-size: 28px;
-font-weight: 600;
+    font-size: 28px;
+    font-weight: 600;
 }
 
-.after-color{
+.after-color {
     font-size: 14px;
     font-weight: 400;
-color: #94a6b8;
+    color: #94a6b8;
 }
-.gap{
+
+.div-fivt-thir-div {
+    margin-top: 4px;
+}
+
+.gap {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
-.div-fivt-thri-div-fir{
+
+.div-fivt-thri-div-fir {
     font-size: 24px;
 }
+
+.mouse-scroll-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 111px;
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    gap: 9px;
+}
+
+.mouse-scroll-main-sec-div {
+    border: 2px solid #1fd1f94d;
+    height: 41px;
+    width: 23px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mouse-scroll-main-sec-div-div {
+    height: 14px;
+    width: 3px;
+    background: hsl(191, 95%, 55%);
+    border-radius: 10px;
+    animation: mouseScrollBar 3s infinite;
+}
+
+.mouse-scroll-main span {
+    display: block;
+    width: max-content;
+    text-align: center;
+    color: #94a6b8;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+@keyframes mouseScrollBar {
+    0% {
+        transform: translateY(0px);
+    }
+
+    20% {
+        transform: translateY(-10px);
+    }
+
+    40% {
+        transform: translateY(0px);
+    }
+
+    60% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+
+}
+
 /* main Hero section 1 End Here  */
+
+/* main Section 2 Start Here  */
+
+
+.sec-2 {
+    background: #0b0e13;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.sec-con{
+    display: flex;
+    flex-direction: column;
+}
+/* .sec-2-div-1-div-1  {} */
+.sec-2-div-1-div-1-div  {
+    background: linear-gradient(96deg, hsl(191 95% 55%) 0%, hsl(280 100% 70%) 100%);
+    background-clip: text;
+    color: #ffffff00;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.sec-2-div-1-div-2 {
+    font-size: 20px;
+    color: #ffffff93;
+}
+
+.sec-2-div-1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 1000px;
+        text-align: center;
+}
