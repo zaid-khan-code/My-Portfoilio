@@ -217,35 +217,35 @@ header>span {
 
 /* Navbar End here */
 /* Main section 1 start  */
-.main-sec-1 {
+/* .main-sec-1 {
     background-color: transparent;
     overflow: hidden;
     height: 100vh;
     
-}
-
+} */
+/* 
 .star-container {
     position: absolute;
     height: 100vh;
     width: 100%;
     overflow: hidden;
     top: 0px;
-}
+} */
 
 
 .pratical {
-    position: relative;
+    /* position: relative;
     height: 4px;
     width: 4px;
     box-shadow: inset 0px 0px 20px 5px rgba(0, 191, 255, 0.3);
     border-radius: 50%;
     background-color: hsl(191, 95%, 55%);
-    opacity: 0.3;
-    animation: left-Right 2s 1 cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    opacity: 0.3; */
+    /* animation: left-Right 2s 1 cubic-bezier(0.4, 0, 0.2, 1) forwards; */
 }
+ 
 
-
-.rotate {
+/* .rotate {
     background: linear-gradient(100deg, hsla(191, 95%, 55%, 0.1) 0%, transparent 30%, hsla(280, 100%, 70%, 0.1) 60%, transparent 90%, hsla(191, 95%, 55%, 0.1) 100%);
     opacity: 0.5;
     animation: spin 9s linear infinite;
@@ -257,8 +257,8 @@ header>span {
     overflow: hidden;
     z-index: -10;
 
-}
-
+} */
+/* 
 @keyframes spin {
     from {
         transform: rotate(0deg);
@@ -267,31 +267,9 @@ header>span {
     to {
         transform: rotate(360deg);
     }
-}
+} */
 
 
-@keyframes left-Right {
-    0% {
-        top: 1400px;
-        left: 1300px;
-    }
-
-    20% {
-        top: 1400px;
-        left: 1300px;
-
-    }
-
-    40% {
-        top: 1400px;
-        left: 1300px;
-    }
-
-    60% {
-        top: 1400px;
-        left: 1300px;
-    }
-}
 
 /* 
 @keyframes slideInTopFade {
@@ -481,18 +459,18 @@ header>span {
     margin-top: 4px;
 }
 
-/* .gap {
-    display: flex;
+.gap {
+    /* display: flex;
     flex-direction: column;
-    gap: 5px;
-} */
-/* 
+    gap: 5px; */
+}
+
 .div-fivt-thri-div-fir {
-    font-size: var(--font-size-lg);
-} */
+    /* font-size: var(--font-size-lg); */
+}
 
 .mouse-scroll-main {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -500,10 +478,10 @@ header>span {
     position: absolute;
     bottom: 16px;
     left: 50%;
-    gap: 9px;
+    gap: 9px; */
 }
 
-.mouse-scroll-main-sec-div {
+/* .mouse-scroll-main-sec-div {
     border: 2px solid #1fd1f94d;
     height: 41px;
     width: 23px;
@@ -511,26 +489,26 @@ header>span {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
-.mouse-scroll-main-sec-div-div {
+/* .mouse-scroll-main-sec-div-div {
     height: 14px;
     width: 3px;
     background: hsl(191, 95%, 55%);
     border-radius: 10px;
     animation: mouseScrollBar 3s infinite;
-}
+} */
 
 .mouse-scroll-main span {
-    display: block;
+    /* display: block;
     width: max-content;
     text-align: center;
     color: var(--color-text-muted);
     font-size: var(--font-size-xs);
-    font-weight: 500;
+    font-weight: 500; */
 }
 
-
+/* 
 @keyframes mouseScrollBar {
     0% {
         transform: translateY(0px);
@@ -552,7 +530,7 @@ header>span {
         transform: translateY(0px);
     }
 
-}
+} */
 
 /* main Hero section 1 End Here  */
 

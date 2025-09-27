@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head> 
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -191,14 +191,16 @@
                 </div>
             </div>
 
-            <div class="star-container"></div>
-            <div class="mouse-scroll-main">
-                <span>Scroll To Explore</span>
-                <div class="mouse-scroll-main-sec-div">
-                    <div class="mouse-scroll-main-sec-div-div"></div>
+            <div class="star-container absolute h-screen w-full overflow-hidden top-0">
+            </div>
+            <div class="flex flex-col justify-center items-center w-[111px] absolute bottom-4 left-1/2 gap-[9px]">
+                <span class="block w-max text-center  text-[14px] text-[#94a6b8] font-medium">Scroll To Explore</span>
+                <div class="border-2 border-[#1fd1f94d] h-[41px] w-[23px] rounded-[16px] flex justify-center items-center"> 
+                    <div class="mouse-scroll-main-sec-div-div h-[14px] w-[3px] bg-[hsl(191,95%,55%)] rounded-[10px] animate-[mouseScrollBar_3s_infinite]"></div>
                 </div>
             </div>
-            <div class="rotate absolute top-0 left-0 w-full h-screen opacity-50 overflow-hidden -z-10"></div>
+            <div class="bg-[linear-gradient(100deg,hsla(191,95%,55%,0.1)_0%,transparent_30%,hsla(280,100%,70%,0.1)_60%,transparent_90%,hsla(191,95%,55%,0.1)_100%)] opacity-50 rotate h-screen w-full absolute top-0 left-0 overflow-hidden -z-10">
+            </div>
         </section>
 
         <section class="w-full mx-auto bg-[#0b0e13] h-[600px] mt-9 ">
