@@ -1,48 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head> 
-
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Dest Portfolio with html css and js">
+    <meta name="description" content="Dest Portfolio with html css and js" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Favicon and related icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="Assets/logo/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="Assets/logo/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="Assets/logo/favicon-16x16.png">
-    <link rel="manifest" href="Assets/logo/site.webmanifest">
-    <link rel="icon" type="image/x-icon" href="Assets/logo/favicon.ico">
-    <link rel="icon" type="image/png" sizes="192x192" href="Assets/logo/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="Assets/logo/android-chrome-512x512.png">
-    <link rel="stylesheet" href="./style.css">
-    <link href="./dist/output.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="Assets/logo/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="Assets/logo/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="Assets/logo/favicon-16x16.png" />
+    <link rel="manifest" href="Assets/logo/site.webmanifest" />
+    <link rel="icon" type="image/x-icon" href="Assets/logo/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="192x192" href="Assets/logo/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="Assets/logo/android-chrome-512x512.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <link href="./dist/output.css" rel="stylesheet" />
     <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+    <style>
+        :root {
+            --foreground: 210 40% 98%;
+            --card: 220 25% 8%;
+            --card-foreground: 210 40% 98%;
+            --popover: 220 25% 8%;
+            --popover-foreground: 210 40% 98%;
+            --primary-foreground: 220 25% 6%;
+            --secondary: 260 50% 15%;
+            --secondary-foreground: 210 40% 98%;
+            --muted: 220 25% 12%;
+            --muted-foreground: 210 20% 65%;
+            --accent: 280 100% 70%;
 
+            --destructive: 0 84% 60%;
+            --destructive-foreground: 210 40% 98%;
+            --border: 220 25% 18%;
+            --input: 220 25% 12%;
+            --ring: 191 95% 55%;
+            --radius: 0.75rem;
+            --electric: 191 95% 55%;
+            --neon-purple: 280 100% 70%;
+            --deep-blue: 220 25% 6%;
+            --steel: 210 20% 25%;
+            --glow: 191 95% 75%;
+            --gradient-primary: linear-gradient(135deg, hsl(191 95% 55%) 0%, hsl(280 100% 70%) 100%);
+            --gradient-dark: linear-gradient(135deg, hsl(220 25% 6%) 0%, hsl(260 50% 15%) 100%);
+            --gradient-glow: radial-gradient(ellipse at center, hsl(191 95% 55% / 0.3) 0%, transparent 70%);
+            --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            --shadow-glow: 0 0 40px hsl(191 95% 55% / 0.4);
+            --shadow-deep: 0 25px 50px -12px hsl(220 25% 6% / 0.8);
+            --shadow-premium: 0 20px 40px -8px hsl(191 95% 55% / 0.2);
+            --sidebar-background: 220 25% 8%;
+            --sidebar-foreground: 210 40% 98%;
+            --sidebar-primary: 191 95% 55%;
+            --sidebar-primary-foreground: 220 25% 6%;
+            --sidebar-accent: 220 25% 12%;
+            --sidebar-accent-foreground: 210 40% 98%;
+            --sidebar-border: 220 25% 18%;
+            --sidebar-ring: 191 95% 55%;
+            --background: 222.2 84% 4.9%;
+            --foreground: 210 40% 98%;
+            --card: 222.2 84% 4.9%;
+            --card-foreground: 210 40% 98%;
+            --popover: 222.2 84% 4.9%;
+            --popover-foreground: 210 40% 98%;
+            --primary: 210 40% 98%;
+            --primary-foreground: 222.2 47.4% 11.2%;
+            --secondary: 217.2 32.6% 17.5%;
+            --secondary-foreground: 210 40% 98%;
+            --muted: 217.2 32.6% 17.5%;
+            --muted-foreground: 215 20.2% 65.1%;
+            --accent: 217.2 32.6% 17.5%;
+            --accent-foreground: 210 40% 98%;
+            --destructive: 0 62.8% 30.6%;
+            --destructive-foreground: 210 40% 98%;
+            --border: 217.2 32.6% 17.5%;
+            --input: 217.2 32.6% 17.5%;
+            --ring: 212.7 26.8% 83.9%;
+            --sidebar-background: 240 5.9% 10%;
+            --sidebar-foreground: 240 4.8% 95.9%;
+            --sidebar-primary: 224.3 76.3% 48%;
+            --sidebar-primary-foreground: 0 0% 100%;
+            --sidebar-accent: 240 3.7% 15.9%;
+            --sidebar-accent-foreground: 240 4.8% 95.9%;
+            --sidebar-border: 240 3.7% 15.9%;
+            --sidebar-ring: 217.2 91.2% 59.8%;
+        }
+    </style>
     <title>Zaid Portfilio</title>
 </head>
 
-<body class="h-[1200vh]  bg-[var(--color-bg-main)] overflow-x-hidden">
+<body class="bg-[#0b0e13] overflow-x-hidden">
     <header class="w-full h-[75px] flex justify-center items-center fixed top-0 left-0 right-0 z-[1]">
-
         <nav class="fixed w-full max-w-[1400px] flex justify-center z-10 mx-auto slide-in-top">
             <div class="flex flex-row items-center justify-between w-[90%] mx-auto min-w-[900px] max-w-[1352px]">
                 <h1
-                    class="cursor-default bg-[linear-gradient(96deg,hsl(191,95%,55%)_0%,hsl(280,100%,70%)_100%)] bg-clip-text text-transparent text-4xl font-bold  transition-transform duration-500 ease-in-out hover:scale-110 z-50 ">
+                    class="cursor-default bg-[linear-gradient(96deg,hsl(191,95%,55%)_0%,hsl(280,100%,70%)_100%)] bg-clip-text text-transparent text-4xl font-bold transition-transform duration-500 ease-in-out hover:scale-110 z-50">
                     Portfolio
                 </h1>
 
-
-
-
                 <div class="flex justify-center items-center w-[530px] gap-1.5">
-                    <a href="./index.html" class="no-underline text-[#94a3b8] w-fit transition-transform duration-300 ease hover:scale-105 
-                   hover:shadow-[0_0px_40px_-8px_rgba(0,191,255,0.2)]">
-                        <div class="text-lg py-[9px] px-3 rounded-lg bg-[#1FD1F91A] ">
-                            <span class="flex justify-center items-center  gap-2.5 text-lg font-normal">
+                    <a href="./index.html"
+                        class="no-underline text-[#94a3b8] w-fit transition-transform duration-300 ease hover:scale-105 hover:shadow-[0_0px_40px_-8px_rgba(0,191,255,0.2)]">
+                        <div class="text-lg py-[9px] px-3 rounded-lg bg-[#1FD1F91A]">
+                            <span class="flex justify-center items-center gap-2.5 text-lg font-normal">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" class="w-4 h-4">
@@ -52,27 +116,25 @@
                                     </path>
                                 </svg>Home
                             </span>
-
                         </div>
                     </a>
                     <a href="./Pages/about.html"
                         class="no-underline text-[#94a3b8] w-fit transition-transform duration-300 ease hover:scale-105 hover:shadow-[0_0px_40px_-8px_rgba(0,191,255,0.2)]">
                         <div class="text-lg py-[9px] px-3 rounded-lg bg-[#1FD1F91A]">
-                            <span class="flex justify-center items-center  gap-2.5 text-lg font-normal">
+                            <span class="flex justify-center items-center gap-2.5 text-lg font-normal">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class=" w-4 h-4">
+                                    stroke-linejoin="round" class="w-4 h-4">
                                     <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
                                     <circle cx="12" cy="7" r="4"></circle>
                                 </svg>About
                             </span>
-
                         </div>
                     </a>
-                    <a href="./Pages/projects.html" class="no-underline text-[#94a3b8] w-fit transition-transform duration-300 ease hover:scale-105 
-                   hover:shadow-[0_0px_40px_-8px_rgba(0,191,255,0.2)]">
-                        <div class="text-lg py-[9px] px-3 rounded-lg bg-[#1FD1F91A] ">
-                            <span class="flex justify-center items-center  gap-2.5 text-lg font-normal">
+                    <a href="./Pages/projects.html"
+                        class="no-underline text-[#94a3b8] w-fit transition-transform duration-300 ease hover:scale-105 hover:shadow-[0_0px_40px_-8px_rgba(0,191,255,0.2)]">
+                        <div class="text-lg py-[9px] px-3 rounded-lg bg-[#1FD1F91A]">
+                            <span class="flex justify-center items-center gap-2.5 text-lg font-normal">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" class="w-4 h-4">
@@ -80,54 +142,53 @@
                                     <rect width="20" height="14" x="2" y="6" rx="2"></rect>
                                 </svg>Projects
                             </span>
-
                         </div>
                     </a>
-                    <a href="./Pages/skills.html" class="no-underline text-[#94a3b8] w-fit transition-transform duration-300 ease hover:scale-105 
-                   hover:shadow-[0_0px_40px_-8px_rgba(0,191,255,0.2)]">
-                        <div class=" text-lg py-[9px] px-3 rounded-lg bg-[#1FD1F91A]">
-                            <span class="flex justify-center items-center  gap-2.5 text-lg font-normal">
+                    <a href="./Pages/skills.html"
+                        class="no-underline text-[#94a3b8] w-fit transition-transform duration-300 ease hover:scale-105 hover:shadow-[0_0px_40px_-8px_rgba(0,191,255,0.2)]">
+                        <div class="text-lg py-[9px] px-3 rounded-lg bg-[#1FD1F91A]">
+                            <span class="flex justify-center items-center gap-2.5 text-lg font-normal">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class=" w-4 h-4">
+                                    stroke-linejoin="round" class="w-4 h-4">
                                     <polyline points="16 18 22 12 16 6"></polyline>
                                     <polyline points="8 6 2 12 8 18"></polyline>
                                 </svg>Skills
                             </span>
-
                         </div>
                     </a>
-                    <a href="./Pages/contact.html" class="no-underline text-[#94a3b8] w-fit transition-transform duration-300 ease hover:scale-105 
-                   hover:shadow-[0_0px_40px_-8px_rgba(0,191,255,0.2)]">
-                        <div class="text-lg py-[9px] px-3 rounded-lg bg-[#1FD1F91A] ">
-                            <span class="flex justify-center items-center  gap-2.5 text-lg font-normal  ">
+                    <a href="./Pages/contact.html"
+                        class="no-underline text-[#94a3b8] w-fit transition-transform duration-300 ease hover:scale-105 hover:shadow-[0_0px_40px_-8px_rgba(0,191,255,0.2)]">
+                        <div class="text-lg py-[9px] px-3 rounded-lg bg-[#1FD1F91A]">
+                            <span class="flex justify-center items-center gap-2.5 text-lg font-normal">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class=" w-4 h-4">
+                                    stroke-linejoin="round" class="w-4 h-4">
                                     <rect width="20" height="16" x="2" y="4" rx="2"></rect>
                                     <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
                                 </svg>Contact
                             </span>
-
                         </div>
                     </a>
                 </div>
 
                 <div class="nav-3-div">
                     <button
-                        class="rounded-md text-sm font-medium h-[40px] border border-[#00bfff4d] transition-all duration-900 ease-in px-5 bg-[#0b0e13] py-2 cursor-progress text-[#f8fafc] hover:text-[#242525] hover:border-[#00bfff] hover:shadow-[0_0_100px_rgba(0,191,255,0.3)] hover:bg-[#cc66ff] ">Let's
-                        Work Together</button>
+                        class="rounded-md text-sm font-medium h-[40px] border border-[#00bfff4d] transition-all duration-900 ease-in px-5 bg-[#0b0e13] py-2 cursor-progress text-[#f8fafc] hover:text-[#242525] hover:border-[#00bfff] hover:shadow-[0_0_100px_rgba(0,191,255,0.3)] hover:bg-[#cc66ff]">
+                        Let's Work Together
+                    </button>
                 </div>
             </div>
         </nav>
     </header>
 
     <main>
-        <section class="bg-transparent overflow-hidden h-screen ">
-            <div class="relative text-white mt-[25vh] flex flex-col justify-center items-center gap-[20px] z-[1000] ">
+        <section class="bg-transparent overflow-hidden h-screen">
+            <div class="relative text-white mt-[25vh] flex flex-col justify-center items-center gap-[20px] z-[1000]">
                 <div
-                    class="hero-welcome slide-in-top bg-[#1fd1f91a] text-[14px] font-bold text-[#1fd1f9] border border-[#1fd1f94d] px-[16px] py-[8px] rounded-full cursor-default shadow-[inset_0_0px_33px_37px_rgba(0,191,255,0.2)] hover:shadow-[0_0px_32px_24px_rgba(0,191,255,0.2)] ">
-                    Welcome to the Future</div>
+                    class="hero-welcome slide-in-top bg-[#1fd1f91a] text-[14px] font-bold text-[#1fd1f9] border border-[#1fd1f94d] px-[16px] py-[8px] rounded-full cursor-default shadow-[inset_0_0px_33px_37px_rgba(0,191,255,0.2)] hover:shadow-[0_0px_32px_24px_rgba(0,191,255,0.2)]">
+                    Welcome to the Future
+                </div>
                 <div
                     class="bg-[linear-gradient(102deg,hsl(191,95%,55%)_20%,hsl(280,100%,70%)_100%)] bg-clip-text text-transparent text-[96px] font-bold flex flex-col text-center relative z-[10] leading-[1] slide-in-top">
                     Ultra-Premium
@@ -135,28 +196,28 @@
                         class="bg-[linear-gradient(334deg,hsl(280,100%,70%)_46%,hsl(191,95%,55%)_60%)] bg-clip-text text-transparent text-[96px] font-bold flex flex-col text-center relative z-[10] leading-[1] slide-in-top">Portfolio</span>
                 </div>
                 <div
-                    class="text-[24px] w-[40%] text-center bg-transparent text-[#ffffff93] bg-clip-text leading-[1.5] slide-in-top ">
-                    Experience the next generation of digital presence. Immersive 3D environments, AI-powered
-                    interactions, and cinematic design converge to create something extraordinary.
-
+                    class="text-[24px] w-[40%] text-center bg-transparent text-[#ffffff93] bg-clip-text leading-[1.5] slide-in-top">
+                    Experience the next generation of digital presence. Immersive 3D
+                    environments, AI-powered interactions, and cinematic design converge
+                    to create something extraordinary.
                 </div>
 
-                <div class="flex flex-row gap-[50px] slide-in-top ">
+                <div class="flex flex-row gap-[50px] slide-in-top">
                     <a href="#exploreMore"
-                        class="bg-[hsl(191,95%,55%)] text-[var(--color-bg-button)] flex self-center justify-center rounded-[6px] flex-row text-[15px] font-medium cursor-pointer gap-[6px] border-0 px-[33px] py-[12px] group">
+                        class="bg-[hsl(191,95%,55%)] text-[var(--color-bg-button)] flex items-center justify-center rounded-[6px] flex-row text-[15px] font-medium cursor-pointer gap-[6px] border-0 px-[33px] py-[12px] group">
                         <p>Explore More</p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class=" w-6 h-6 transition-all duration-200 ease-in group-hover:bg-[hsl(191,95%,49.5%)] group-hover:translate-x-[7px]">
+                            class="w-4 h-4 transition-all duration-200 ease-in group-hover:bg-[hsl(191,95%,49.5%)] group-hover:translate-x-[7px]">
                             <path d="M5 12h14"></path>
                             <path d="m12 5 7 7-7 7"></path>
                         </svg>
                     </a>
                     <a href="./Assets/Resume/Zaid Offical CV.pdf"
-                        class="flex justify-center items-center gap-[5px] bg-[var(--color-bg-button)] text-[var(--color-text)] border border-[rgba(0,191,255,0.3)] px-[33px] py-[12px] rounded-[6px] text-[15px] font-medium cursor-pointer transition-all duration-200 ease-in hover:text-[rgb(36,37,37)] hover:border-[#00bfff] hover:shadow-[0_0_100px_rgba(0,191,255,0.3)] hover:bg-[hsl(280,100%,70%)] slide-in-top ">
+                        class="flex justify-center items-center gap-[5px] bg-[var(--color-bg-button)] text-[var(--color-text)] border border-[rgba(0,191,255,0.3)] px-[33px] py-[12px] rounded-[6px] text-[15px] font-medium cursor-pointer transition-all duration-200 ease-in hover:text-[rgb(36,37,37)] hover:border-[#00bfff] hover:shadow-[0_0_100px_rgba(0,191,255,0.3)] hover:bg-[hsl(280,100%,70%)] slide-in-top">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class=" w-4 h-4 mr-2">
+                            class="w-4 h-4 mr-2">
                             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                             <polyline points="7 10 12 15 17 10"></polyline>
                             <line x1="12" x2="12" y1="15" y2="3"></line>
@@ -164,75 +225,341 @@
                         <p>Download CV</p>
                     </a>
                     <a href="./Pages/CV.html"
-                        class="flex justify-center items-center gap-[5px] bg-transparent text-[#f8fafc] border-0 px-[33px] py-[12px] 
-                        rounded-[6px] text-[15px] font-medium cursor-pointer transition-all duration-200 ease-in hover:text-[rgb(36,37,37)] hover:border-[#00bfff] hover:shadow-[0_0_100px_rgba(0,191,255,0.3)] hover:bg-[hsl(280,100%,70%)] slide-in-top ">
+                        class="flex justify-center items-center gap-[5px] bg-transparent text-[#f8fafc] border-0 px-[33px] py-[12px] rounded-[6px] text-[15px] font-medium cursor-pointer transition-all duration-200 ease-in hover:text-[rgb(36,37,37)] hover:border-[#00bfff] hover:shadow-[0_0_100px_rgba(0,191,255,0.3)] hover:bg-[hsl(280,100%,70%)] slide-in-top">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class=" w-4 h-4 mr-2">
+                            class="w-4 h-4 mr-2">
                             <rect width="20" height="16" x="2" y="4" rx="2"></rect>
                             <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
                         </svg>
                         <p>View CV</p>
                     </a>
                 </div>
-                <div class="flex justify-between gap-[120px] text-[19px] mt-[34px] text-center slide-in-top ">
-                    <div class="flex flex-col gap-[5px] ">
-                        <div class=" text-[#1fd1f9] text-[28px] font-semibold">8</div>
-                        <div class=" text-[14px] font-normal text-[#94a6b8]">Projects</div>
+                <div class="flex justify-between gap-[120px] text-[19px] mt-[34px] text-center slide-in-top">
+                    <div class="flex flex-col gap-[5px]">
+                        <div class="text-[#1fd1f9] text-[28px] font-semibold">8</div>
+                        <div class="text-[14px] font-normal text-[#94a6b8]">Projects</div>
                     </div>
-                    <div class=" flex flex-col gap-[5px]">
-                        <div class=" text-[#1fd1f9] text-[28px] font-semibold">3</div>
-                        <div class="text-[14px] font-normal text-[#94a6b8]">Technologies</div>
+                    <div class="flex flex-col gap-[5px]">
+                        <div class="text-[#1fd1f9] text-[28px] font-semibold">3</div>
+                        <div class="text-[14px] font-normal text-[#94a6b8]">
+                            Technologies
+                        </div>
                     </div>
-                    <div class=" flex flex-col gap-[5px]">
-                        <div class="text-[24px] text-[#1fd1f9] font-semibold">Fresher</div>
-                        <div class=" text-[14px] font-normal text-[#94a6b8]">Years Experience</div>
+                    <div class="flex flex-col gap-[5px]">
+                        <div class="text-[24px] text-[#1fd1f9] font-semibold">
+                            Fresher
+                        </div>
+                        <div class="text-[14px] font-normal text-[#94a6b8]">
+                            Years Experience
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="star-container absolute h-screen w-full overflow-hidden top-0">
+                <div
+                    class="pratical leftAnRightAnime relative h-[4px] w-[4px] shadow-[inset_0_0_20px_5px_rgba(0,191,255,0.3)] rounded-full bg-[hsl(191,95%,55%)] opacity-30">
+                </div>
             </div>
             <div class="flex flex-col justify-center items-center w-[111px] absolute bottom-4 left-1/2 gap-[9px]">
-                <span class="block w-max text-center  text-[14px] text-[#94a6b8] font-medium">Scroll To Explore</span>
-                <div class="border-2 border-[#1fd1f94d] h-[41px] w-[23px] rounded-[16px] flex justify-center items-center"> 
-                    <div class="mouse-scroll-main-sec-div-div h-[14px] w-[3px] bg-[hsl(191,95%,55%)] rounded-[10px] animate-[mouseScrollBar_3s_infinite]"></div>
-                </div>
-            </div>
-            <div class="bg-[linear-gradient(100deg,hsla(191,95%,55%,0.1)_0%,transparent_30%,hsla(280,100%,70%,0.1)_60%,transparent_90%,hsla(191,95%,55%,0.1)_100%)] opacity-50 rotate h-screen w-full absolute top-0 left-0 overflow-hidden -z-10">
-            </div>
-        </section>
-
-        <section class="w-full mx-auto bg-[#0b0e13] h-[600px] mt-9 ">
-            <div class="sec-2-div-1">
-                <div class="sec-2-div-1-div-1">
-                    <div id="exploreMore"
-                        class="bg-[linear-gradient(334deg,hsl(280,100%,70%)_46%,hsl(191,95%,55%)_60%)] bg-clip-text text-transparent text-4xl font-bold  transition-transform duration-500 mx-auto ease-in-out w-fit text-center h-fit leading-[50px]">
-                        Explore My Work</div>
-                    <div class="sec-2-div-1-div-2">Dive deeper into my professional journey, technical skills, and
-                        innovative projects</div>
-                </div>
-            </div>
-            <div class="manolisa w-full max-w-[1400px] mx-auto">
-                <div class="sec-2-div-1-div-2 border border-[#ff1a1a]">
-                    <div class="sec-2-div-1-div-2-div-1 text-2xl  items-center flex gap-1 font-semibold">
-                        <div
-                            class="sec-2-div-1-div-2-div-1sa h-[50px] w-[50px] rounded-[14px] flex justify-center items-center bg-[#0f232d]">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class=" w-8 h-8 text-[#1fd1f9]">
-                                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
-                                <circle cx="12" cy="7" r="4"></circle>
-                            </svg>
-                        </div>About Us
+                <span class="block w-max text-center text-[14px] text-[#94a6b8] font-medium">Scroll To Explore</span>
+                <div
+                    class="border-2 border-[#1fd1f94d] h-[41px] w-[23px] rounded-[16px] flex justify-center items-center">
+                    <div
+                        class="mouse-scroll-main-sec-div-div h-[14px] w-[3px] bg-[hsl(191,95%,55%)] rounded-[10px] animate-[mouseScrollBar_3s_infinite]">
                     </div>
                 </div>
             </div>
+            <div
+                class="bg-[linear-gradient(100deg,hsla(191,95%,55%,0.1)_0%,transparent_30%,hsla(280,100%,70%,0.1)_60%,transparent_90%,hsla(191,95%,55%,0.1)_100%)] opacity-50 rotate h-screen w-full absolute top-0 left-0 overflow-hidden -z-10">
+            </div>
+        </section>
+
+        <section class="w-full mx-auto bg-[#0b0e13] h-[350px] mt-9">
+            <div>
+                <div id="exploreMore"
+                    class="bg-[linear-gradient(334deg,hsl(280,100%,70%)_46%,hsl(191,95%,55%)_60%)] bg-clip-text text-transparent text-4xl font-bold transition-transform duration-500 mx-auto ease-in-out w-fit text-center h-fit leading-[50px]">
+                    Explore My Work
+                </div>
+                <div class="w-max text-[20px] text-[#ffffff93] mr-auto ml-auto">
+                    Dive deeper into my professional journey, technical skills, and
+                    innovative projects
+                </div>
+            </div>
+            <div class="manolisa flex gap-8 flex-wrap my-10   w-full max-w-[1400px] mx-auto">
+                <a class="text-[20px] block w-[316px] backdrop-blur-sm hover:bg-[hsla(218,27%,8%,1)] rounded-lg group hover:scale-105 transition-all duration-200 ease-in h-[190px] mr-auto ml-auto border border-[#103744]"
+                    href="./Pages/about.html">
+                    <div class="items-center w-full flex flex-col gap-1 font-semibold">
+                        <div class="h-2 w-full rounded-t-[6px] bg-gradient-to-r from-blue-500/20 to-cyan-500/20"></div>
+                        <div class="flex flex-col gap-2 pt-4 pb-4 pl-7 pr-7 items-start">
+                            <div class="flex gap-4 items-center ">
+                                <div
+                                    class="h-[40px] w-[40px] rounded-[14px] flex justify-center items-center bg-[#0f232d]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="w-6 h-6 text-[#1fd1f9]">
+                                        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="12" cy="7" r="4"></circle>
+                                    </svg>
+                                </div>
+                                <div class="text-2xl text-[#f8fafb]">About Me</div>
+                            </div>
+                            <p class="text-[#94a6b8] text-base font-normal">
+                                Learn about my background, education, and professional journey
+                            </p>
+                            <div class="text-[#1fb1f9] text-base justify-center items-center flex gap-2">
+                                Learn More
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="w-4 h-4 transition-all duration-200 ease-in group-hover:translate-x-[7px]">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="text-[20px] block w-[316px] backdrop-blur-sm hover:bg-[hsla(218,27%,8%,1)] rounded-lg group hover:scale-105 transition-all duration-200 ease-in h-[190px] mr-auto ml-auto border border-[#103744]"
+                    href="./Pages/projects.html">
+                    <div class="items-center w-full flex flex-col gap-1 font-semibold">
+                        <div class="h-2 w-full rounded-t-[6px] bg-gradient-to-r from-purple-500/20 to-pink-500/20">
+                        </div>
+                        <div class="flex flex-col gap-2 pt-4 pb-4 pl-7 pr-7 items-start">
+                            <div class="flex gap-4 items-center ">
+                                <div
+                                    class="h-[40px] w-[40px] rounded-[14px] flex justify-center items-center bg-[#0f232d]">
+                                    <svg class="w-6 h-6 text-[#1fd1f9]" xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-briefcase w-6 h-6 text-[hsl(191,95%,55%)]">
+                                        <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                                        <rect width="20" height="14" x="2" y="6" rx="2"></rect>
+                                    </svg>
+                                </div>
+                                <div class="text-2xl text-[#f8fafb]">Projects</div>
+                            </div>
+                            <p class="text-[#94a6b8] text-base font-normal">
+                                Explore my portfolio of cutting-edge applications and solutions
+                            </p>
+                            <div class="text-[#1fb1f9] text-base justify-center items-center flex gap-2">
+                                Learn More
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="w-4 h-4 transition-all duration-200 ease-in group-hover:translate-x-[7px]">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="text-[20px] block w-[316px] backdrop-blur-sm hover:bg-[hsla(218,27%,8%,1)] rounded-lg group hover:scale-105 transition-all duration-200 ease-in h-[190px] mr-auto ml-auto border border-[#103744]"
+                    href="./Pages/skills.html">
+                    <div class="items-center w-full flex flex-col gap-1 font-semibold">
+                        <div class="h-2 w-full rounded-t-[6px] bg-gradient-to-r from-green-500/20 to-emerald-500/20">
+                        </div>
+                        <div class="flex flex-col gap-2 pt-4 pb-4 pl-7 pr-7 items-start">
+                            <div class="flex gap-4 items-center ">
+                                <div
+                                    class="h-[40px] w-[40px] rounded-[14px] flex justify-center items-center bg-[#0f232d]">
+                                    <svg class="w-6 h-6 text-[#1fd1f9]" xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-code w-6 h-6 text-[hsl(191,95%,55%)]">
+                                        <polyline points="16 18 22 12 16 6"></polyline>
+                                        <polyline points="8 6 2 12 8 18"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="text-2xl text-[#f8fafb]">Skills</div>
+                            </div>
+                            <p class="text-[#94a6b8] text-base font-normal">
+                                Discover my technical expertise across various technologies
+                            </p>
+                            <div class="text-[#1fb1f9] text-base justify-center items-center flex gap-2">
+                                Learn More
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="w-4 h-4 transition-all duration-200 ease-in group-hover:translate-x-[7px]">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="text-[20px] block w-[316px] backdrop-blur-sm hover:bg-[hsla(218,27%,8%,1)] rounded-lg group hover:scale-105 transition-all duration-200 ease-in h-[190px] mr-auto ml-auto border border-[#103744]"
+                    href="./Pages/contact.html">
+                    <div class="items-center w-full flex flex-col gap-1 font-semibold">
+                        <div class="h-2 w-full rounded-t-[6px] bg-gradient-to-r from-orange-500/20 to-red-500/20"></div>
+                        <div class="flex flex-col gap-2 py-4 px-7 items-start">
+                            <div class="flex gap-4 items-center ">
+                                <div
+                                    class="h-[40px] w-[40px] rounded-[14px] flex justify-center items-center bg-[#0f232d]">
+                                    <svg class="w-6 h-6 text-[#1fd1f9]" xmlns="http://www.w3.org/2000/svg" width="24"
+                                        height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="lucide lucide-mail w-6 h-6 text-[hsl(191,95%,55%)]">
+                                        <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                                    </svg>
+                                </div>
+                                <div class="text-2xl text-[#f8fafb]">Contact</div>
+                            </div>
+                            <p class="text-[#94a6b8] text-base font-normal">
+                                Get in touch to discuss
+                                opportunities and collaborations
+                            </p>
+                            <div class="text-[#1fb1f9] text-base justify-center items-center flex gap-2">
+                                Learn More
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="w-4 h-4 transition-all duration-200 ease-in group-hover:translate-x-[7px]">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </section>
     </main>
+    <footer class="bg-[#0b0e13]">
+        <div class="w-full h-[2px] bg-gradient-to-r from-transparent via-[#1fd1f96e] to-transparent"">
+        </div>
+        <div class=" relative z-10">
+            <div class="container mx-auto px-6 py-16">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="lg:col-span-2 opacity-100 transform-none">
+                        <h3
+                            class="text-2xl font-bold bg-[linear-gradient(334deg,hsl(280,100%,70%)_46%,hsl(191,95%,55%)_60%)] bg-clip-text text-transparent w-max mb-4">
+                            Portfolio</h3>
+                        <p class="text-[#94a6b8] mb-6 max-w-md leading-relaxed">
+                            Creating exceptional digital experiences with cutting-edge technology and innovative design.
+                            Let's build something amazing together.</p>
+                        <div class="space-y-3 mb-6">
+                            <div class="flex items-center gap-3 text-sm text-muted-foreground"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-mail w-4 h-4 text-[hsl(191,95%,55%)]">
+                                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                                </svg><span class="text-[hsl(191,95%,55%)]">zaidbinasif468@gmail.com</span></div>
+                            <div class="flex items-center gap-3 text-sm text-muted-foreground"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-phone w-4 h-4 text-[hsl(191,95%,55%)]">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                    </path>
+                                </svg><span class="text-[hsl(191,95%,55%)]">+92 3213809914</span></div>
+                            <div class="flex items-center gap-3 text-sm text-muted-foreground"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-map-pin w-4 h-4 text-[hsl(191,95%,55%)]">
+                                    <path
+                                        d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+                                    </path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg><span class="text-[hsl(191,95%,55%)]">Karachi, Sindh, Pakistan</span></div>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="#" aria-label="GitHub"
+                                class="inline-flex items-center justify-center text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[hsl(191,95%,55%)] focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border bg-[hsl(220,25%,6%)] text-[hsl(210,40%,98%)] hover:text-[hsl(191,95%,55%)] rounded-md w-10 h-10 p-0 border-[hsl(191,95%,55%/.3)] hover:border-[hsl(191,95%,55%)] hover:bg-[hsl(191,95%,55%/.1)] [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-github w-4 h-4">
+                                    <path
+                                        d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                                    </path>
+                                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                                </svg>
+                            </a>
+                            <a href="#" aria-label="LinkedIn"
+                                class="inline-flex items-center justify-center text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[hsl(191,95%,55%)] focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border bg-[hsl(220,25%,6%)] text-[hsl(210,40%,98%)] hover:text-[hsl(191,95%,55%)] rounded-md w-10 h-10 p-0 border-[hsl(191,95%,55%/.3)] hover:border-[hsl(191,95%,55%)] hover:bg-[hsl(191,95%,55%/.1)] [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-linkedin w-4 h-4">
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                    </path>
+                                    <rect width="4" height="12" x="2" y="9"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </a>
+                            <a href="https://mail.google.com/mail/u/0/?fs=1&to=zaidbinasif468@gmail.com&su=From+Portfolio&body=I+want+to+talk+to+you&tf=cm"
+                                target="_blank" rel="noopener noreferrer" aria-label="Email"
+                                class="inline-flex items-center justify-center text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[hsl(191,95%,55%)] focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border bg-[hsl(220,25%,6%)] text-[hsl(210,40%,98%)] hover:text-[hsl(191,95%,55%)] rounded-md w-10 h-10 p-0 border-[hsl(191,95%,55%/.3)] hover:border-[hsl(191,95%,55%)] hover:bg-[hsl(191,95%,55%/.1)] [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-mail w-4 h-4">
+                                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div style="opacity: 1; transform: none;">
+                        <h4 class="font-semibold text-foreground mb-4 text-[#f8fafb]">Quick Links</h4>
+                        <ul class="space-y-3">
+                            <li><a href="./index.html"
+                                    class="text-[#94a6b8] hover:text-[hsl(191,95%,55%)] transition-colors text-sm">Home</a>
+                            </li>
+                            <li><a href="./Pages/about.html"
+                                    class="text-[#94a6b8] hover:text-[hsl(191,95%,55%)] transition-colors text-sm">About</a>
+                            </li>
+                            <li><a href="./Pages/projects.html"
+                                    class="text-[#94a6b8] hover:text-[hsl(191,95%,55%)] transition-colors text-sm">Projects</a>
+                            </li>
+                            <li><a href="./Pages/contact.html"
+                                    class="text-[#94a6b8] hover:text-[hsl(191,95%,55%)] transition-colors text-sm">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div style="opacity: 1; transform: none;">
+                        <h4 class="font-semibold text-foreground mb-4 text-[#f8fafb]">Services</h4>
+                        <ul class="space-y-3">
+                            <li>
+                                <a href="#"
+                                    class="text-[#94a6b8] hover:text-[hsl(191,95%,55%)] transition-colors text-sm">
+                                    Web Development
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="text-[#94a6b8] hover:text-[hsl(191,95%,55%)] transition-colors text-sm">
+                                    Maintenance
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div data-orientation="horizontal" role="none" class="h-[1px] w-full bg-[hsl(217.2,32.6%,17.5%)]"></div>
+            <div class="container mx-auto px-6 py-6">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4" style="opacity: 1;">
+                    <p class="text-sm text-[#94a6b8] text-center md:text-left">© 2025 Portfolio. All rights
+                        reserved.
+                    </p>
+                    <div class="flex items-center gap-1 text-sm text-[#94a6b8]"><span>Made with</span><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-heart w-4 h-4 text-red-500 fill-current">
+                            <path
+                                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+                            </path>
+                        </svg><span>using Tailwind CSS</span></div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script type="module" src="./scripts/main.js"></script>
-
-
 </body>
 
 </html>
