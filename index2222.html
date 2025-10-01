@@ -25,14 +25,14 @@
 
 <body class="bg-[#0b0e13] w-full overflow-x-hidden">
     <header
-        class="w-full navbar transition-all duration-300 ease-in h-[75px] flex justify-center items-center fixed top-0 left-0 right-0 z-[10000000000] bg-transparent">
+        class="w-full   navbar  transition-all  ease-in h-[75px] flex justify-center items-center fixed top-0 left-0 right-0 z-[10000000000]  ">
         <nav class="fixed flex w-full justify-center max-w-[1400px] z-10 mx-auto slide-in-top">
-            <div class="flex flex-row  items-center justify-between    w-[90%] mx-auto ">
+            <div class="flex flex-row  items-center justify-between    w-[90%] mx-auto min-w-[900px] ">
                 <h1
                     class="cursor-default bg-[linear-gradient(96deg,hsl(191,95%,55%)_0%,hsl(280,100%,70%)_100%)] bg-clip-text text-transparent text-[25px] font-bold transition-transform duration-500 ease-in-out hover:scale-110 z-50">
                     Portfolio
                 </h1>
-                <div class="hidden md:contents  ">
+                <div class="md:contents hidden  ">
                     <div class="flex justify-center items-center w-[530px] gap-1.5">
                         <a href="./index.html"
                             class="no-underline text-[#94a3b8] w-fit transition-transform duration-300 ease hover:scale-105 hover:shadow-[0_0px_40px_-8px_rgba(0,191,255,0.2)]">
@@ -111,7 +111,7 @@
                 </div>
                 <div class="md:hidden contents justify-center items-center">
                     <button
-                        class="inline-flex menu-btn items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[hsl(191,95%,55%)] focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-[hsl(280,100%,70%)] hover:text-[hsl(220,25%,6%)] h-9 rounded-md px-3   z-[100000000000000070000234] border border-[hsl(220,25%,18%)] bg-[hsl(220,25%,6%)] text-[hsl(210,40%,98%)]">
+                        class="inline-flex menu-btn items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[hsl(191,95%,55%)] focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-[hsl(280,100%,70%)] hover:text-[hsl(220,25%,6%)] h-9 rounded-md px-3   z-[10000000000000000000000000000000000] border border-[hsl(220,25%,18%)] bg-[hsl(220,25%,6%)] text-[hsl(210,40%,98%)]">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="svg1 lucide transition-all duration-900 ease-in lucide-menu w-6 h-6">
@@ -125,90 +125,32 @@
         </nav>
     </header>
 
-    <!-- Mobile full-screen overlay menu -->
-    <div
-        class="mobile-overlay h-screen min-h-screen  bottom-0 right-0 top-0 z-[100000] w-full fixed inset-0 md:hidden hidden">
-        <div
-            class="mobile-overlay-backdrop fixed inset-0 bg-[hsl(220,25%,6%/.95)] backdrop-blur-xl opacity-0 transition-opacity duration-300">
-        </div>
-        <div
-            class="mobile-overlay-panel relative z-50 flex flex-col items-center justify-center h-full gap-6 px-6 opacity-0 -translate-y-full transition-transform  duration-300">
-            <a href="./index.html" class="text-[#f8fafc] text-lg  font-medium flex items-center gap-3 anim-delay-0">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="w-5 h-5">
-                    <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
-                    <path
-                        d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z">
-                    </path>
-                </svg>
-                Home
-            </a>
-            <a href="./Pages/about.html"
-                class="text-[#f8fafc] text-lg font-medium flex items-center gap-3 anim-delay-100">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="w-5 h-5">
-                    <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
-                    <circle cx="12" cy="7" r="4"></circle>
-                </svg>
-                About
-            </a>
-            <a href="./Pages/projects.html"
-                class="text-[#f8fafc] text-lg font-medium flex items-center gap-3 anim-delay-200">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="w-5 h-5">
-                    <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-                    <rect width="20" height="14" x="2" y="6" rx="2"></rect>
-                </svg>
-                Projects
-            </a>
-            <a href="./Pages/skills.html"
-                class="text-[#f8fafc] text-lg font-medium flex items-center gap-3 anim-delay-300">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="w-5 h-5">
-                    <polyline points="16 18 22 12 16 6"></polyline>
-                    <polyline points="8 6 2 12 8 18"></polyline>
-                </svg>
-                Skills
-            </a>
-            <a href="./Pages/contact.html" class="text-[#f8fafc] text-lg font-medium flex items-center gap-3">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="w-5 h-5">
-                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
-                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-                </svg>
-                Contact
-            </a>
-        </div>
-    </div>
-
     <!-- <div class="h-screen min-h-screen  fixed bottom-0 right-0 top-0 md:hidden backdrop-blur-xl z-[100000000000000070000] w-full"></div> -->
 
     <main>
         <section class="bg-transparent overflow-hidden relative min-h-max h-screen ">
             <div class="relative text-white mt-[25vh] flex flex-col justify-center items-center gap-[20px] z-[1000]">
                 <div
-                    class="hero-welcome slide-in-top bg-[#1fd1f91a] text-xs sm:text-sm md:text-base lg:text-lg font-bold text-[#1fd1f9] border border-[#1fd1f94d] px-[16px] py-[8px] rounded-full cursor-default shadow-[inset_0_0px_33px_37px_rgba(0,191,255,0.2)] hover:shadow-[0_0px_32px_24px_rgba(0,191,255,0.2)]">
+                    class="hero-welcome slide-in-top bg-[#1fd1f91a] md:text-[16px] sm:text-[14px]
+                     lg:text-[10px] text-[5px] font-bold text-[#1fd1f9] border border-[#1fd1f94d] px-[16px] py-[8px] rounded-full cursor-default shadow-[inset_0_0px_33px_37px_rgba(0,191,255,0.2)] hover:shadow-[0_0px_32px_24px_rgba(0,191,255,0.2)]">
                     Welcome to the Future
                 </div>
                 <div
-                    class="bg-[linear-gradient(340deg,hsl(191,95%,55%)_72%,hsl(280,100%,70%)_77%)] bg-clip-text text-transparent text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold flex flex-col text-center relative z-[10] leading-[1] slide-in-top">
+                    class="bg-[linear-gradient(340deg,hsl(191,95%,55%)_72%,hsl(280,100%,70%)_77%)] bg-clip-text text-transparent md:text-[44px] sm:text-[16px]
+                     lg:text-[53px] text-[23px] font-bold flex flex-col text-center relative z-[10] leading-[1] slide-in-top">
                     Ultra-Premium
                     <span
-                        class="bg-[linear-gradient(334deg,hsl(280,100%,70%)_46%,hsl(191,95%,55%)_60%)] bg-clip-text text-transparent text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold flex flex-col text-center relative z-[10] leading-[1] slide-in-top">Portfolio</span>
+                        class="bg-[linear-gradient(334deg,hsl(280,100%,70%)_46%,hsl(191,95%,55%)_60%)] bg-clip-text text-transparent md:text-[44px] sm:text-[16px]
+                     lg:text-[53px] text-[23px] font-bold flex flex-col text-center relative z-[10] leading-[1] slide-in-top">Portfolio</span>
                 </div>
-                <div
-                    class=" w-[90%] sm:w-[80%] md:w-[70%] lg:w-[60%] xl:w-[50%] text-center bg-transparent text-[#ffffff93] text-base sm:text-lg md:text-xl lg:text-2xl bg-clip-text leading-[1.5] slide-in-top">
+                <div class=" w-[70%] md:w-[10%] 2lg:w-[40%] text-center bg-transparent text-[#ffffff93] md:text-[20px] sm:text-[20px]
+                     lg:text-[15px] text-[120px] bg-clip-text leading-[1.5] slide-in-top">
                     Experience the next generation of digital presence. Immersive 3D
                     environments, AI-powered interactions, and cinematic design converge
                     to create something extraordinary.
                 </div>
 
-                <div class="flex flex-col sm:flex-row gap-4 slide-in-top">
+                <div class="flex flex-row gap-[50px] slide-in-top">
                     <a href="#exploreMore"
                         class="bg-[hsl(191,95%,55%)] text-[var(--color-bg-button)] flex items-center justify-center rounded-[6px] flex-row text-[15px] font-medium cursor-pointer gap-[6px] border-0 px-[33px] py-[12px] group">
                         <p>Explore More</p>
@@ -241,7 +183,7 @@
                         <p>View CV</p>
                     </a>
                 </div>
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 text-[19px] mt-[34px] text-center slide-in-top">
+                <div class="flex justify-between gap-[120px] text-[19px] mt-[34px] text-center slide-in-top">
                     <div class="flex flex-col gap-[5px]">
                         <div class="text-[#1fd1f9] text-[28px] font-semibold">8</div>
                         <div class="text-[14px] font-normal text-[#94a6b8]">Projects</div>
@@ -273,7 +215,7 @@
                 <div
                     class="border-2 border-[#1fd1f94d] h-[41px] w-[23px] rounded-[16px] flex justify-center items-center">
                     <div
-                        class="mouse-scroll-main-sec-div-div h-[14px] w-[3px] bg-[hsl(191,95%,55%)] rounded-[10px] animate-[mouseScrollBar_3s_infinite] motion-reduce:animate-none">
+                        class="mouse-scroll-main-sec-div-div h-[14px] w-[3px] bg-[hsl(191,95%,55%)] rounded-[10px] animate-[mouseScrollBar_3s_infinite]">
                     </div>
                 </div>
             </div>
@@ -524,9 +466,6 @@
                             </li>
                             <li><a href="./Pages/projects.html"
                                     class="text-[#94a6b8] hover:text-[hsl(191,95%,55%)] transition-colors text-sm">Projects</a>
-                            </li>
-                            <li><a href="./Pages/skills.html"
-                                    class="text-[#94a6b8] hover:text-[hsl(191,95%,55%)] transition-colors text-sm">Skills</a>
                             </li>
                             <li><a href="./Pages/contact.html"
                                     class="text-[#94a6b8] hover:text-[hsl(191,95%,55%)] transition-colors text-sm">Contact</a>

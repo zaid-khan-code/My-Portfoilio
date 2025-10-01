@@ -3,7 +3,17 @@ module.exports = {
   content: [
     "./*.html",
     "./Pages/**/*.html",
-    "./src/**/*.{js,ts,jsx,tsx}"
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "./scripts/**/*.js"
+  ],
+  safelist: [
+    // Classes toggled from JS that might not appear in template files
+    'backdrop-blur-xl',
+    'border-b',
+    'border-[#1fd1f94d]',
+    'bg-[hsl(220,25%,6%/.8)]',
+    'shadow-[0_20px_40px_-8px_rgba(0,191,255,0.2)]',
+    'hidden'
   ],
   theme: {
     extend: {
