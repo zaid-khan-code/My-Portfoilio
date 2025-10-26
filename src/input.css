@@ -151,6 +151,25 @@
         background-clip: text;
     }
 
+    .skillsprogress{
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     @keyframes spin {
         from {
             transform: rotate(0deg);
