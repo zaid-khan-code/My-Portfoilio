@@ -18,232 +18,578 @@
     <link rel="icon" type="image/png" sizes="192x192" href="../Assets/logo/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="512x512" href="../Assets/logo/android-chrome-512x512.png">
     <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href=".././dist/output.css" />
+
 
     <title>Zaid About</title>
 </head>
 
 <body>
-    <header>
-        <nav class="nav-bar slide-in-top">
-            <div class="wither">
-                <div class="nav-1-logo">
-                    <h1>Portfolio</h1>
-                </div> 
-
-                <div class="nav-2-navigation">
-                    <a href="../index.html" class="nav-ics navigation-ic-1">
-                        <div class="nav-ic-div-sp ">
-                            <span class="nav-ics-span">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="lucide lucide-house w-4 h-4">
-                                    <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
-                                    <path
-                                        d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z">
-                                    </path>
-                                </svg>Home
-                            </span>
-
-                        </div>
-                    </a>
-                    <a href="./about.html" class="nav-ics navigation-ic-2">
-                        <div class="nav-ic-div-sp">
-                            <span class="nav-ics-span">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="lucide lucide-user w-4 h-4">
-                                    <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
-                                    <circle cx="12" cy="7" r="4"></circle>
-                                </svg>About
-                            </span>
-
-                        </div>
-                    </a>
-                    <a href="./projects.html" class="nav-ics navigation-ic-3">
-                        <div class="nav-ic-div-sp ">
-                            <span class="nav-ics-span">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="lucide lucide-briefcase w-4 h-4">
-                                    <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-                                    <rect width="20" height="14" x="2" y="6" rx="2"></rect>
-                                </svg>Projects
-                            </span>
-
-                        </div>
-                    </a>
-                    <a href="./skills.html" class="nav-ics navigation-ic-4">
-                        <div class="nav-ic-div-sp ">
-                            <span class="nav-ics-span">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="lucide lucide-code w-4 h-4">
-                                    <polyline points="16 18 22 12 16 6"></polyline>
-                                    <polyline points="8 6 2 12 8 18"></polyline>
-                                </svg>Skills
-                            </span>
-
-                        </div>
-                    </a>
-                    <a href="./contact.html" class="nav-ics navigation-ic-5">
-                        <div class="nav-ic-div-sp ">
-                            <span class="nav-ics-span"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail w-4 h-4">
-                                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
-                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-                                </svg>Contact
-                            </span>
-
-                        </div>
-                    </a>
+    <header
+        class="w-full navbar transition-all duration-300 ease-in h-[75px] flex justify-center items-center fixed top-0 left-0 right-0 z-[10000000000] bg-transparent">
+        <nav class="fixed flex w-full justify-center max-w-[1400px] z-10 mx-auto slide-in-top">
+            <div class="flex flex-row  items-center justify-between    w-[90%] mx-auto ">
+                <h1
+                    class="cursor-default bg-[linear-gradient(96deg,hsl(191,95%,55%)_0%,hsl(280,100%,70%)_100%)] bg-clip-text text-transparent text-[25px] font-bold transition-transform duration-500 ease-in-out hover:scale-110 z-50">
+                    Portfolio
+                </h1>
+                <div class="hidden md:contents  ">
+                    <div class="flex justify-center items-center w-[530px] gap-1.5">
+                        <a href="../index.html"
+                            class="no-underline text-[#94a3b8] w-fit transition-transform duration-300 ease hover:scale-105 hover:shadow-[0_0px_40px_-8px_rgba(0,191,255,0.2)]">
+                            <div class="text-[14px] py-[9px] px-3 rounded-lg bg-[#1FD1F91A]">
+                                <span class="flex justify-center items-center gap-2.5 text-[14px] font-normal">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="w-4 h-4">
+                                        <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
+                                        <path
+                                            d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z">
+                                        </path>
+                                    </svg>Home
+                                </span>
+                            </div>
+                        </a>
+                        <a href="./about.html"
+                            class="no-underline text-[#94a3b8] w-fit transition-transform duration-300 ease hover:scale-105 hover:shadow-[0_0px_40px_-8px_rgba(0,191,255,0.2)]">
+                            <div class="text-[14px] py-[9px] px-3 rounded-lg bg-[#1FD1F91A]">
+                                <span class="flex justify-center items-center gap-2.5 text-[14px] font-normal">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="w-4 h-4">
+                                        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="12" cy="7" r="4"></circle>
+                                    </svg>About
+                                </span>
+                            </div>
+                        </a>
+                        <a href="./projects.html"
+                            class="no-underline text-[#94a3b8] w-fit transition-transform duration-300 ease hover:scale-105 hover:shadow-[0_0px_40px_-8px_rgba(0,191,255,0.2)]">
+                            <div class="text-[14px] py-[9px] px-3 rounded-lg bg-[#1FD1F91A]">
+                                <span class="flex justify-center items-center gap-2.5 text-[14px] font-normal">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="w-4 h-4">
+                                        <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                                        <rect width="20" height="14" x="2" y="6" rx="2"></rect>
+                                    </svg>Projects
+                                </span>
+                            </div>
+                        </a>
+                        <a href="./skills.html"
+                            class="no-underline text-[#94a3b8] w-fit transition-transform duration-300 ease hover:scale-105 hover:shadow-[0_0px_40px_-8px_rgba(0,191,255,0.2)]">
+                            <div class="text-[14px] py-[9px] px-3 rounded-lg bg-[#1FD1F91A]">
+                                <span class="flex justify-center items-center gap-2.5 text-[14px] font-normal">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="w-4 h-4">
+                                        <polyline points="16 18 22 12 16 6"></polyline>
+                                        <polyline points="8 6 2 12 8 18"></polyline>
+                                    </svg>Skills
+                                </span>
+                            </div>
+                        </a>
+                        <a href="./contact.html"
+                            class="no-underline text-[#94a3b8] w-fit transition-transform duration-300 ease hover:scale-105 hover:shadow-[0_0px_40px_-8px_rgba(0,191,255,0.2)]">
+                            <div class="text-[14px] py-[9px] px-3 rounded-lg bg-[#1FD1F91A]">
+                                <span class="flex justify-center items-center gap-2.5 text-[14px] font-normal">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="w-4 h-4">
+                                        <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                                    </svg>Contact
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="nav-3-div">
+                        <button
+                            class="rounded-md text-[10px] font-medium h-[40px] border border-[#00bfff4d] transition-all duration-900 ease-in px-5 bg-[#0b0e13] py-2 cursor-progress text-[#f8fafc] hover:text-[#242525] hover:border-[#00bfff] hover:shadow-[0_0_100px_rgba(0,191,255,0.3)] hover:bg-[#cc66ff]">
+                            Let's Work Together
+                        </button>
+                    </div>
                 </div>
-
-                <div class="nav-3-div"><button class="nav-3-div-btn">Let's Work Together</button></div>
+                <div class="md:hidden contents justify-center items-center">
+                    <button
+                        class="inline-flex menu-btn items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[hsl(191,95%,55%)] focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-[hsl(280,100%,70%)] hover:text-[hsl(220,25%,6%)] h-9 rounded-md px-3   z-[100000000000000070000234] border border-[hsl(220,25%,18%)] bg-[hsl(220,25%,6%)] text-[hsl(210,40%,98%)]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="svg1 lucide transition-all duration-900 ease-in lucide-menu w-6 h-6">
+                            <line x1="4" x2="20" y1="12" y2="12" />
+                            <line x1="4" x2="20" y1="6" y2="6" />
+                            <line x1="4" x2="20" y1="18" y2="18" />
+                        </svg>
+                    </button>
+                </div>
             </div>
         </nav>
     </header>
-    <main>
-        <section class="sec-2">
-            <div class="sec-con">
-                <div class="sec-2-div-1">
-                    <div class="sec-2-div-1-div-1">
-                        <div class="sec-2-div-1-div-1-div coloredText">About Me</div>
-                        <div class="sec-2-div-1-div-2">A passionate frontend developer dedicated to pushing the
-                            boundaries
-                            of modern web
-                            experiences. Specializing in
-                            JavaScript, responsive design, and performance optimization, with a vision to grow into
-                            immersive technologies
-                            and AI
-                            integration in the future.</div>
-                    </div>
+
+    <!-- Mobile full-screen overlay menu -->
+    <div
+        class="mobile-overlay h-screen min-h-screen  bottom-0 right-0 top-0 z-[100000] w-full fixed inset-0 md:hidden hidden">
+        <div
+            class="mobile-overlay-backdrop fixed inset-0 bg-[hsl(220,25%,6%/.95)] backdrop-blur-xl opacity-0 transition-opacity duration-300">
+        </div>
+        <div
+            class="mobile-overlay-panel relative z-50 flex flex-col items-center justify-center h-full gap-6 px-6 opacity-0 -translate-y-full transition-transform  duration-300">
+            <a href=".././index.html" class="text-[#f8fafc] text-lg  font-medium flex items-center gap-3 anim-delay-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="w-5 h-5">
+                    <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
+                    <path
+                        d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z">
+                    </path>
+                </svg>
+                Home
+            </a>
+            <a href="./about.html" class="text-[#f8fafc] text-lg font-medium flex items-center gap-3 anim-delay-100">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="w-5 h-5">
+                    <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+                About
+            </a>
+            <a href="./projects.html" class="text-[#f8fafc] text-lg font-medium flex items-center gap-3 anim-delay-200">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="w-5 h-5">
+                    <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    <rect width="20" height="14" x="2" y="6" rx="2"></rect>
+                </svg>
+                Projects
+            </a>
+            <a href="./skills.html" class="text-[#f8fafc] text-lg font-medium flex items-center gap-3 anim-delay-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="w-5 h-5">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+                Skills
+            </a>
+            <a href="./contact.html" class="text-[#f8fafc] text-lg font-medium flex items-center gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="w-5 h-5">
+                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg>
+                Contact
+            </a>
+        </div>
+    </div>
+
+    <main class="pt-20 bg-[hsl(220,25%,6%)] text-[hsl(210,40%,98%)]">
+        <section class="py-20 relative">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16" style="opacity: 1; transform: none;">
+                    <h1 class="text-5xl mafazaLeft font-bold mb-6">
+                        <span
+                            class="bg-gradient-to-r from-[hsl(191,95%,55%)] to-[hsl(280,100%,70%)] bg-clip-text text-transparent">About
+                            Me</span>
+                        </h1>
+                    <p class="text-xl text-[hsl(210,20%,65%)] max-w-3xl mx-auto mafazaRight" >Aspiring web developer and computer
+                        science student (Fresher) with a strong foundation in HTML, CSS, JavaScript,
+                        Tailwind CSS, Firebase, and Firestore. Passionate about building modern, responsive, and
+                        creative web experiences.</p>
                 </div>
-                <div class="sec-2-div-2">
-                    <div class="sec-2-div-2-div-1">
-                        <div class="sec-2-div-2-div-1-div-1">Crafting Digital Experiences That Matter</div>
-                        <div class="sec-2-div-2-div-1-div-2 mememeoo">With a growing passion for web development at just
-                            16 years
-                            old, I’m building a strong foundation to become a skilled Full Stack Developer. From
-                            crafting clean, responsive websites with HTML and CSS to exploring the power of JavaScript,
-                            I strive to create digital experiences that are both functional and user-focused.</div>
-                        <div class="sec-2-div-2-div-1-div-3 mememeoo">My focus lies in mastering frontend development
-                            with
-                            JavaScript while steadily expanding into backend technologies. I
-                            believe the future of the web is dynamic, responsive, and built by those who never stop
-                            learning. My goal is to turn
-                            ideas into reality through code that combines creativity with precision.</div>
-                        <div class="sec-2-div-2-div-1-div-4 coreooe">Core Technologies</div>
-                        <div class="sec-2-div-2-div-1-div-5 smalllleee">
-                            <div class="technologiessss">HTML</div>
-                            <div class="technologiessss">CSS</div>
-                            <div class="technologiessss">JavaScript</div>
-                            <div class="technologiessss">Tailwind CSS</div>
-                            <div class="technologiessss">Version Control (Git,Github,GitHub desktop)</div>
-                            <div class="technologiessss">Responsive-design</div>
-                        </div>
-                        <div class="sec-2-div-2-div-1-div-4  coreooe">Pursuing expertise in</div>
-                        <div class="sec-2-div-2-div-1-div-5 smalllleee">
-                            <div class="technologiessss">React</div>
-                            <div class="technologiessss">SASS</div>
-                            <div class="technologiessss">TypeScript</div>
-                            <div class="technologiessss">Next.js</div>
-                            <div class="technologiessss">Node.js</div>
-                            <div class="technologiessss">express.js</div>
-                        </div>
-                    </div>
-                    <div class="sec-2-div-2-div-2">
-                        <div class="sec-2-div-2-div-2-div-1">
-                            <svg class="svgiii" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-brain w-12 h-12 text-primary mb-4 group-hover:scale-110 transition-transform duration-300">
-                                <path
-                                    d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z">
-                                </path>
-                                <path
-                                    d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z">
-                                </path>
-                                <path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"></path>
-                                <path d="M17.599 6.5a3 3 0 0 0 .399-1.375"></path>
-                                <path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"></path>
-                                <path d="M3.477 10.896a4 4 0 0 1 .585-.396"></path>
-                                <path d="M19.938 10.5a4 4 0 0 1 .585.396"></path>
-                                <path d="M6 18a4 4 0 0 1-1.967-.516"></path>
-                                <path d="M19.967 17.484A4 4 0 0 1 18 18"></path>
-                            </svg>
-                            <div class="sec-2-div-2-div-2-div-1-div-1">AI Innovation</div>
-                            <div class="sec-2-div-2-div-2-div-1-div-2">Pioneering AI-powered solutions with cutting-edge
-                                machine learning</div>
-                        </div>
-                        <div class="sec-2-div-2-div-2-div-1">
-                            <svg class="svgiii" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-rocket w-12 h-12 text-primary mb-4 group-hover:scale-110 transition-transform duration-300">
-                                <path
-                                    d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z">
-                                </path>
-                                <path
-                                    d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z">
-                                </path>
-                                <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
-                                <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
-                            </svg>
-                            <div class="sec-2-div-2-div-2-div-1-div-1">Performance Excellence</div>
-                            <div class="sec-2-div-2-div-2-div-1-div-2">Delivering blazing-fast applications with optimal
-                                user experiences</div>
-                        </div>
-                        <div class="sec-2-div-2-div-2-div-1">
-                            <svg class="svgiii" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-target w-12 h-12 text-primary mb-4 group-hover:scale-110 transition-transform duration-300">
-                                <circle cx="12" cy="12" r="10"></circle>
-                                <circle cx="12" cy="12" r="6"></circle>
-                                <circle cx="12" cy="12" r="2"></circle>
-                            </svg>
-                            <div class="sec-2-div-2-div-2-div-1-div-1">Strategic Vision</div>
-                            <div class="sec-2-div-2-div-2-div-1-div-2">Transforming complex business needs into elegant
-                                technical solutions
+            </div>
+        </section>
+        <section class="py-16">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto" style="opacity: 1; transform: none;">
+                    <div
+                        class="rounded-lg border text-[hsl(210,40%,98%)] shadow-[0_20px_40px_-8px_hsla(191,95%,55%,0.2)] border-[hsl(191,95%,55%,0.2)] bg-[hsl(220,25%,8%,0.5)] backdrop-blur-sm">
+                        <div class="p-8">
+                            <h2 class="text-3xl font-bold mb-6 mafazaLeft">My Journey</h2>
+                            <div class="space-y-4 text-lg text-[hsl(210,20%,65%)] leading-relaxed">
+                                <p class="mafazaRight">
+                                    My journey in technology began during my 9th and 10th grade years when a family
+                                    member suggested I try coding. At first, I thought it would be easy and maybe even a
+                                    bit boring, but once I started learning from YouTube tutorials, I discovered how
+                                    fascinating it truly was. What started as a simple suggestion from a family member
+                                    has now become a true passion for coding and building digital experiences.
+                                </p>
+                                <p class="mafazaLeft">
+                                    Throughout my learning journey, I’ve had the opportunity to work with modern and
+                                    cutting-edge technologies including Tailwind CSS, Firebase, Firestore, JavaScript,
+                                    and GitHub. I strongly believe in the power of technology to create impact,
+                                    transform ideas into reality, and improve lives — a belief that drives my ongoing
+                                    commitment to continuous learning and innovation.
+                                </p>
+                                <p class="mafazaDown">
+                                    When there is a new technology, you’ll find me learning it and building projects
+                                    around it. I strongly believe in sharing knowledge, because when I had none, I was
+                                    truly eager and desperate to find it.
+                                </p>
                             </div>
                         </div>
-                        <div class="sec-2-div-2-div-2-div-1">
-                            <svg class="svgiii" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-zap w-12 h-12 text-primary mb-4 group-hover:scale-110 transition-transform duration-300">
-                                <path
-                                    d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z">
-                                </path>
-                            </svg>
-                            <div class="sec-2-div-2-div-2-div-1-div-1">Rapid Prototyping</div>
-                            <div class="sec-2-div-2-div-2-div-1-div-2">From concept to production-ready applications in
-                                record time</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="sec-2-div-3">
-                    <div class="sec-2-div-3-div-1 sasasms">
-                        <div class="sec-2-div-3-div-1-div-1 fonote">🚀</div>
-                        <div class="sec-2-div-3-div-1-div-2 numbrara">08</div>
-                        <div class="sec-2-div-3-div-1-div-3 letesttexr">Projects Completed</div>
-                    </div>
-                    <div class="sec-2-div-3-div-2 sasasms">
-                        <div class="sec-2-div-3-div-2-div-1 fonote">⚡</div>
-                        <div class="sec-2-div-3-div-2-div-2 numbrara">03</div>
-                        <div class="sec-2-div-3-div-2-div-3 letesttexr">Technologies Mastered</div>
-                    </div>
-                    <div class="sec-2-div-3-div-3 sasasms">
-                        <div class="sec-2-div-3-div-3-div-1 fonote">📈</div>
-                        <div class="sec-2-div-3-div-3-div-2 numbrara">Fresher</div>
-                        <div class="sec-2-div-3-div-3-div-3 letesttexr">Years of Experience</div>
                     </div>
                 </div>
             </div>
         </section>
+        <section class="py-16">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12" style="opacity: 1; transform: none;">
+                    <h2 class="text-4xl font-bold mb-4 mafazaDown"><span
+                            class="bg-gradient-to-r from-[#00e0fc] to-[#d050ff] bg-clip-text text-transparent">Education</span>
+                    </h2>
+                    <p class="text-lg text-[hsl(210,20%,65%)] mafazaDown">Academic foundation in computer science and software engineering</p>
+                </div>
+                <div class="educationSection space-y-8 max-w-4xl mx-auto ">
+
+                </div>
+            </div>
+        </section>
+        <section class="py-16">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12" style="opacity: 1; transform: none;">
+                    <h2 class="text-4xl font-bold mafazaDown mb-4"><span
+                            class="bg-gradient-to-r from-[#00e0fc] to-[#d050ff] bg-clip-text text-transparent">Certifications</span>
+                    </h2>
+                    <p class="text-lg text-[hsl(210,20%,65%)] mafazaLeft">Professional certifications in cutting-edge technologies
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-6 max-w-max mx-auto">
+                    <div style="opacity: 1; transform: none;" class="mafazaLeft">
+                        <div
+                            class="rounded-lg border text-[hsl(210,40%,98%)] shadow-[0_20px_40px_-8px_hsla(191,95%,55%,0.2)] h-full border-[hsl(191,95%,55%,0.2)] bg-[hsl(220,25%,8%,0.5)] backdrop-blur-sm hover:bg-[hsl(220,25%,8%,0.8)] transition-all duration-300 text-center">
+                            <div class="p-6"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-award w-12 h-12 text-[hsl(191,95%,55%)] mx-auto mb-4">
+                                    <path
+                                        d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526">
+                                    </path>
+                                    <circle cx="12" cy="8" r="6"></circle>
+                                </svg>
+                                <h3 class="text-lg font-semibold mb-2">Modern Web Application Development</h3>
+                                <p class="text-[hsl(210,20%,65%)] mb-2">Saylani Mass IT Training </p>
+                                <div
+                                    class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-[hsl(191,95%,55%)] focus:ring-offset-2 text-[hsl(210,40%,98%)]">
+                                    Comming Soon</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="opacity: 1; transform: none;" class="mafazaRight">
+                        <div
+                            class="rounded-lg border text-[hsl(210,40%,98%)] shadow-[0_20px_40px_-8px_hsla(191,95%,55%,0.2)] h-full border-[hsl(191,95%,55%,0.2)] bg-[hsl(220,25%,8%,0.5)] backdrop-blur-sm hover:bg-[hsl(220,25%,8%,0.8)] transition-all duration-300 text-center">
+                            <div class="p-6"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-award w-12 h-12 text-[hsl(191,95%,55%)] mx-auto mb-4">
+                                    <path
+                                        d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526">
+                                    </path>
+                                    <circle cx="12" cy="8" r="6"></circle>
+                                </svg>
+                                <h3 class="text-lg font-semibold mb-2">Web Development</h3>
+                                <p class="text-[hsl(210,20%,65%)] mb-2">SZABIST Zebtech </p>
+                                <div
+                                    class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-[hsl(191,95%,55%)] focus:ring-offset-2 text-[hsl(210,40%,98%)]">
+                                    20-March-2024</div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-16">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12" style="opacity: 1; transform: none;">
+                    <h2 class="text-4xl mafazaRight font-bold mb-4"><span
+                            class="bg-gradient-to-r from-[#00e0fc] to-[#d050ff] bg-clip-text text-transparent">Professional
+                            Experience</span></h2>
+                    <p class="text-lg text-[hsl(210,20%,65%)] mafazaLeft">Building innovative solutions across various industries
+                    </p>
+                </div>
+                <div class="space-y-8 experianceSec max-w-4xl mx-auto">
+                </div>
+            </div>
+        </section>
     </main>
-    <script type="module" src="../scripts/main.js"></script>
+<!-- <footer class="bg-[#0b0e13] pt-[100px]">
+    <div class="w-full h-[2px] bg-gradient-to-r from-transparent via-[#1fd1f96e] to-transparent"">
+        </div>
+        <div class=" relative z-10">
+        <div class="container mx-auto px-6 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="lg:col-span-2  opacity-100 transform-none">
+                    <h3
+                        class="text-2xl font-bold bg-[linear-gradient(334deg,hsl(280,100%,70%)_46%,hsl(191,95%,55%)_60%)] bg-clip-text text-transparent w-max mb-4">
+                        Portfolio</h3>
+                    <p class="text-[#94a6b8] mb-6 max-w-md leading-relaxed">
+                        Creating exceptional digital experiences with cutting-edge technology and innovative design.
+                        Let's build something amazing together.</p>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center gap-3 text-sm text-muted-foreground"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-mail w-4 h-4 text-[hsl(191,95%,55%)]">
+                                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                            </svg><span class="text-[hsl(191,95%,55%)]">zaidbinasif468@gmail.com</span></div>
+                        <div class="flex items-center gap-3 text-sm text-muted-foreground"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-phone w-4 h-4 text-[hsl(191,95%,55%)]">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg><span class="text-[hsl(191,95%,55%)]">+92 3213809914</span></div>
+                        <div class="flex items-center gap-3 text-sm text-muted-foreground"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-map-pin w-4 h-4 text-[hsl(191,95%,55%)]">
+                                <path
+                                    d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+                                </path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg><span class="text-[hsl(191,95%,55%)]">Karachi, Sindh, Pakistan</span></div>
+                    </div>
+                    <div class="flex gap-3">
+                        <a href="https://github.com/zaid-khan-code" target="_blank" rel="noopener noreferrer"
+                            aria-label="GitHub"
+                            class="inline-flex items-center justify-center text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[hsl(191,95%,55%)] focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border bg-[hsl(220,25%,6%)] text-[hsl(210,40%,98%)] hover:text-[hsl(191,95%,55%)] rounded-md w-10 h-10 p-0 border-[hsl(191,95%,55%/.3)] hover:border-[hsl(191,95%,55%)] hover:bg-[hsl(191,95%,55%/.1)] [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-github w-4 h-4">
+                                <path
+                                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                                </path>
+                                <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/zaid-khan-profile/" target="_blank"
+                            rel="noopener noreferrer" aria-label="LinkedIn"
+                            class="inline-flex items-center justify-center text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[hsl(191,95%,55%)] focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border bg-[hsl(220,25%,6%)] text-[hsl(210,40%,98%)] hover:text-[hsl(191,95%,55%)] rounded-md w-10 h-10 p-0 border-[hsl(191,95%,55%/.3)] hover:border-[hsl(191,95%,55%)] hover:bg-[hsl(191,95%,55%/.1)] [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-linkedin w-4 h-4">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect width="4" height="12" x="2" y="9"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a href="https://mail.google.com/mail/u/0/?fs=1&to=zaidbinasif468@gmail.com&su=From+Portfolio&body=I+want+to+talk+to+you&tf=cm"
+                            target="_blank" rel="noopener noreferrer" aria-label="Email"
+                            class="inline-flex items-center justify-center text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[hsl(191,95%,55%)] focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border bg-[hsl(220,25%,6%)] text-[hsl(210,40%,98%)] hover:text-[hsl(191,95%,55%)] rounded-md w-10 h-10 p-0 border-[hsl(191,95%,55%/.3)] hover:border-[hsl(191,95%,55%)] hover:bg-[hsl(191,95%,55%/.1)] [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-mail w-4 h-4">
+                                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div style="opacity: 1; transform: none;">
+                    <h4 class="font-semibold text-foreground mb-4 text-[#f8fafb]">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="../index.html"
+                                class="text-[#94a6b8] hover:text-[hsl(191,95%,55%)] transition-colors text-sm">Home</a>
+                        </li>
+                        <li><a href="./about.html"
+                                class="text-[#94a6b8] hover:text-[hsl(191,95%,55%)] transition-colors text-sm">About</a>
+                        </li>
+                        <li><a href="./projects.html"
+                                class="text-[#94a6b8] hover:text-[hsl(191,95%,55%)] transition-colors text-sm">Projects</a>
+                        </li>
+                        <li><a href="./skills.html"
+                                class="text-[#94a6b8] hover:text-[hsl(191,95%,55%)] transition-colors text-sm">Skills</a>
+                        </li>
+                        <li><a href="./contact.html"
+                                class="text-[#94a6b8] hover:text-[hsl(191,95%,55%)] transition-colors text-sm">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div style="opacity: 1; transform: none;">
+                    <h4 class="font-semibold text-foreground mb-4 text-[#f8fafb]">Services</h4>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="#" class="text-[#94a6b8] hover:text-[hsl(191,95%,55%)] transition-colors text-sm">
+                                Web Development
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-[#94a6b8] hover:text-[hsl(191,95%,55%)] transition-colors text-sm">
+                                Maintenance
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-orientation="horizontal" role="none" class="h-[1px] w-full bg-[hsl(217.2,32.6%,17.5%)]"></div>
+        <div class="container mx-auto px-6 py-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4" style="opacity: 1;">
+                <p class="text-sm text-[#94a6b8] text-center md:text-left">© 2025 Portfolio. All rights
+                    reserved.
+                </p>
+                <div class="flex items-center gap-1 text-sm text-[#94a6b8]"><span>Made with</span><svg
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-heart w-4 h-4 text-red-500 fill-current">
+                        <path
+                            d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+                        </path>
+                    </svg><span>using Tailwind CSS</span></div>
+            </div>
+        </div>
+    </div>
+</footer> -->
+
+<footer class="bg-[#0b0e13] pt-[100px]">
+    <div class="w-full h-[2px] bg-gradient-to-r from-transparent via-[#1fd1f96e] to-transparent leftiy">
+    </div>
+    <div class=" relative z-10">
+        <div class="container mx-auto px-6 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <div class="lg:col-span-2 opacity-100 transform-none">
+                    <h3
+                        class="text-2xl font-bold bg-[linear-gradient(334deg,hsl(280,100%,70%)_46%,hsl(191,95%,55%)_60%)] bg-clip-text text-transparent w-max mb-4 leftiy">
+                        Portfolio</h3>
+                    <p class="text-[#94a6b8] mb-6 max-w-md leading-relaxed leftiy">
+                        Creating exceptional digital experiences with cutting-edge technology and innovative design.
+                        Let's build something amazing together.</p>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center gap-3 text-sm text-muted-foreground">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide leftiy lucide-mail w-4 h-4 text-[hsl(191,95%,55%)]">
+                                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                            </svg><span class="text-[hsl(191,95%,55%)] leftiy leftiy">zaidbinasif468@gmail.com</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-sm text-muted-foreground">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide leftiy lucide-phone w-4 h-4 text-[hsl(191,95%,55%)]">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
+                            <span class="text-[hsl(191,95%,55%)] leftiy">+92 3213809914</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-sm text-muted-foreground">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-map-pin w-4 h-4 leftiy text-[hsl(191,95%,55%)]">
+                                <path
+                                    d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0">
+                                </path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg><span class="text-[hsl(191,95%,55%)] leftiy">Karachi, Sindh, Pakistan</span>
+                        </div>
+                    </div>
+                    <div class="flex gap-3">
+                        <a href="https://github.com/zaid-khan-code" target="_blank" rel="noopener noreferrer"
+                            aria-label="GitHub"
+                            class="inline-flex items-center justify-center text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[hsl(191,95%,55%)] focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border bg-[hsl(220,25%,6%)] text-[hsl(210,40%,98%)] hover:text-[hsl(191,95%,55%)] rounded-md w-10 h-10 p-0 border-[hsl(191,95%,55%/.3)] hover:border-[hsl(191,95%,55%)] hover:bg-[hsl(191,95%,55%/.1)] [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 leftiy">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-github w-4 h-4">
+                                <path
+                                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                                </path>
+                                <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/zaid-khan-profile/" target="_blank"
+                            rel="noopener noreferrer" aria-label="LinkedIn"
+                            class="inline-flex items-center justify-center text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[hsl(191,95%,55%)] focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border bg-[hsl(220,25%,6%)] text-[hsl(210,40%,98%)] hover:text-[hsl(191,95%,55%)] rounded-md w-10 h-10 p-0 border-[hsl(191,95%,55%/.3)] hover:border-[hsl(191,95%,55%)] hover:bg-[hsl(191,95%,55%/.1)] [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 leftiy">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-linkedin w-4 h-4">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect width="4" height="12" x="2" y="9"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a href="https://mail.google.com/mail/u/0/?fs=1&to=zaidbinasif468@gmail.com&su=From+Portfolio&body=I+want+to+talk+to+you&tf=cm"
+                            target="_blank" rel="noopener noreferrer" aria-label="Email"
+                            class="inline-flex items-center justify-center text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[hsl(191,95%,55%)] focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border bg-[hsl(220,25%,6%)] text-[hsl(210,40%,98%)] hover:text-[hsl(191,95%,55%)] rounded-md w-10 h-10 p-0 border-[hsl(191,95%,55%/.3)] hover:border-[hsl(191,95%,55%)] hover:bg-[hsl(191,95%,55%/.1)] [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 leftiy">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-mail w-4 h-4">
+                                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div style="opacity: 1; transform: none;">
+                    <h4 class="font-semibold text-foreground mb-4 text-[#f8fafb] rightiy">Quick Links</h4>
+                    <ul class="space-y-3 ">
+                        <li class="rightiy"><a href=".././index.html"
+                                class="text-[#94a6b8] hover:text-[hsl(191,95%,55%)] transition-colors text-sm">Home</a>
+                        </li>
+                        <li class="rightiy"><a href="./about.html"
+                                class="text-[#94a6b8] hover:text-[hsl(191,95%,55%)] transition-colors text-sm">About</a>
+                        </li>
+                        <li class="rightiy"><a href="./projects.html"
+                                class="text-[#94a6b8] hover:text-[hsl(191,95%,55%)] transition-colors text-sm">Projects</a>
+                        </li>
+                        <li class="rightiy"><a href="./skills.html"
+                                class="text-[#94a6b8] hover:text-[hsl(191,95%,55%)] transition-colors text-sm">Skills</a>
+                        </li>
+                        <li class="rightiy"><a href="./contact.html"
+                                class="text-[#94a6b8] hover:text-[hsl(191,95%,55%)] transition-colors text-sm">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div style="opacity: 1; transform: none;">
+                    <h4 class="font-semibold rightiy text-foreground mb-4  text-[#f8fafb]">Services</h4>
+                    <ul class="space-y-3">
+                        <li class="rightiy">
+                            <a href="#" class="text-[#94a6b8] hover:text-[hsl(191,95%,55%)] transition-colors text-sm">
+                                Web Development
+                            </a>
+                        </li>
+                        <li class="rightiy">
+                            <a href="#" class="text-[#94a6b8] hover:text-[hsl(191,95%,55%)] transition-colors text-sm">
+                                Maintenance
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-orientation="horizontal" role="none" class="h-[1px] w-full rightiy bg-[hsl(217.2,32.6%,17.5%)]"></div>
+        <div class="container mx-auto px-6 py-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4" style="opacity: 1;">
+                <p class="text-sm text-[#94a6b8] text-center md:text-left downiy">© 2025 Portfolio. All rights
+                    reserved.
+                </p>
+                <div class="flex items-center gap-1 text-sm text-[#94a6b8]">
+                    <span class="downiy">Made with</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-heart downiy w-4 h-4 text-red-500 fill-current">
+                        <path
+                            d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+                        </path>
+                    </svg>
+                    <span class="downiy">using Tailwind CSS</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- <script src=".././scripts/main.js"></script> -->
+    <script src=".././scripts/about.js"></script>
 </body>
 
 </html>
