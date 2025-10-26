@@ -118,7 +118,7 @@ function animations() {
 }
 window.addEventListener("scroll", animations);
 window.addEventListener("load", animations);
-window.addEventListener("load",navbar);
+window.addEventListener("load", navbar);
 
 
 
@@ -245,11 +245,11 @@ showBigProjects.forEach(project => {
                         </div>
                         <div class="space-y-6">
                             <div>
-                                <h3 class="text-3xl font-bold mb-4">${project.title}</h3>
+                                <h3 class="text-3xl text-[#f8fafc] font-bold mb-4">${project.title}</h3>
                                 <p class="text-lg text-[hsl(210_20%_65%)] leading-relaxed mb-6">${project.descrip}
                                 </p>
                                 <div class="grid grid-cols-2 gap-4 mb-6">
-                                    <div class="flex items-center gap-2 text-sm text-[hsl(210_20%_65%)]"><svg
+                                    <div class="flex items-center gap-2 text-sm text-[hsl(191_95%_55%)]"><svg
                                             xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                             stroke-linecap="round" stroke-linejoin="round"
@@ -259,7 +259,7 @@ showBigProjects.forEach(project => {
                                             <rect width="18" height="18" x="3" y="4" rx="2"></rect>
                                             <path d="M3 10h18"></path>
                                         </svg>${project.took} </div>
-                                        <div class="flex items-center gap-2 text-sm text-[hsl(215_20.2%_65.1%)]">
+                                        <div class="flex items-center gap-2 text-sm text-[hsl(191_95%_55%)]">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                             stroke-linecap="round" stroke-linejoin="round"
@@ -289,7 +289,7 @@ showBigProjects.forEach(project => {
                                     Live Demo
                                     </a>
                                     <a href="${project.repoLink}" target="_blank"
-                                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[hsl(191_95%_55%)] focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-[hsl(191_95%_55%_/_0.3)] bg-[hsl(220_25%_6%)] text-[hsl(210_40%_98%)] hover:bg-[hsl(280_100%_70%)] hover:text-[hsl(280_100%_70%)] hover:border-[hsl(191_95%_55%)] h-10 px-4 py-2 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0"><svg
+                                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[hsl(191_95%_55%)] focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-[hsl(191_95%_55%_/_0.3)] bg-[hsl(220_25%_6%)] text-[hsl(210_40%_98%)] hover:bg-[hsl(280_100%_70%)] hover:text-[hsl(220_25%_6%)] hover:border-[hsl(191_95%_55%)] h-10 px-4 py-2 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round" class="lucide lucide-github w-4 h-4 mr-2">
@@ -345,15 +345,13 @@ showBigProjects2.forEach(project => {
                                             <polygon points="6 3 20 12 6 21 6 3"></polygon>
                                         </svg>
                                     </div>
+                                        <img src="${project.image}" class="h-full w-full" alt="Project ${project.title}">
                                 </div>
                             </div>
                         </div>
                         <div class="space-y-6 lg:col-start-1 lg:row-start-1">
                             <div>
-                                <div
-                                    class="inline-flex items-center rounded-full border border-transparent bg-[hsl(191_95%_55%)] text-[hsl(220_25%_6%)] hover:bg-[hsl(191_95%_55%_/_0.8)] px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-[hsl(191_95%_55%)] focus:ring-offset-2 mb-4">
-                                    3D/AR</div>
-                                <h3 class="text-3xl font-bold mb-4">${project.title}</h3>
+                                <h3 class="text-3xl font-bold text-[#f8fafc] mb-4">${project.title}</h3>
                                 <p class="text-lg text-[hsl(210_20%_65%)] leading-relaxed mb-6">${project.descrip}</p>
                                 <div class="grid grid-cols-2 gap-4 mb-6">
                                     <div class="flex items-center gap-2 text-sm text-[hsl(191_95%_55%)]"><svg
@@ -383,7 +381,8 @@ showBigProjects2.forEach(project => {
                             <div class="flex flex-wrap laanguagaess gap-2 mb-6">
                                 
                             </div>
-                            <div class="flex gap-4"><a href="${project.projectLink}" target="_blank"
+                            <div class="flex gap-4">
+                                <a href="${project.projectLink}" target="_blank"
                                     class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[hsl(191_95%_55%)] focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-[hsl(191_95%_55%)] text-[hsl(220_25%_6%)] hover:bg-[hsl(191_95%_55%_/_0.9)] h-10 px-4 py-2 group [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -401,7 +400,10 @@ showBigProjects2.forEach(project => {
                                             d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
                                         </path>
                                         <path d="M9 18c-4.51 2-5-2-7-2"></path>
-                                    </svg>Source Code</a></div>
+                                    </svg>
+                                        Source Code
+                                        </a>
+                                    </div>
                         </div>
                     </div>`;
 
@@ -435,6 +437,7 @@ showProjects.forEach(project => {
 
     let container = document.querySelector(`.firstSelmt`);
     let temp = document.createElement("div");
+
 
     html = `<div style="opacity: 1; transform: none;" class="${project.ani}">
                         <div
@@ -485,21 +488,21 @@ showProjects.forEach(project => {
                                    
                                 </div>
                                 <div class="flex gap-2">
-                                    <a href="${project.projectLink}" target="_blank" class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-[hsl(222.2_84%_4.9%)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus:ring-[hsl(212.7_26.8%_83.9%)] focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:w-4 [&_svg]:h-4 [&_svg]:shrink-0 bg-[hsl(210_40%_98%)] text-[hsl(222.2_47.4%_11.2%)] hover:bg-[hsl(210_40%_98%_/_0.9)] h-9 rounded-md px-3 flex-1">
+                                    <a href="${project.projectLink}" target="_blank" class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-[hsl(222.2_84%_4.9%)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus:ring-[hsl(212.7_26.8%_83.9%)] [&_svg]:w-4 [&_svg]:h-4 h-9 rounded-md px-3 flex-1 focus-visible:ring-[hsl(191_95%_55%)] focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-[hsl(191_95%_55%)] text-[hsl(220_25%_6%)] hover:bg-[hsl(191_95%55%/_0.9)] group [&_svg]:pointer-events-none [&_svg]:shrink-0">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                             stroke-linecap="round" stroke-linejoin="round"
-                                            class="lucide lucide-external-link w-3 h-3 mr-1">
+                                            class="lucide lucide-external-link w-3 h-3 mr-1  group-hover:rotate-45 transition-transform">
                                             <path d="M15 3h6v6"></path>
                                             <path d="M10 14 21 3"></path>
                                             <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                                         </svg>Demo
                                     </a>
-                                    <a href="${project.repoLink}" target="_blank" class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-[hsl(222.2_84%_4.9%)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus:ring-[hsl(212.7_26.8%_83.9%)] focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:w-4 [&_svg]:h-4 [&_svg]:shrink-0 border bg-[hsl(222.2_84%_4.9%)] hover:bg-[hsl(217.2_32.6%_17.5%)] hover:text-[hsl(210_40%_98%)] h-9 rounded-md px-3 border-[hsl(210_40%_98%_/_0.3)]">
+                                    <a href="${project.repoLink}" target="_blank" class="ring-offset-[hsl(222.2_84%_4.9%)] focus:ring-[hsl(212.7_26.8%_83.9%)] [&_svg]:w-4 [&_svg]:h-4 h-9 px-3 inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[hsl(191_95%_55%)] focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-[hsl(191_95%_55%/_0.3)] bg-[hsl(220_25%_6%)] text-[hsl(210_40%_98%)] hover:bg-[hsl(280_100%_70%)] hover:text-[hsl(220_25%_6%)] hover:border-[hsl(191_95%_55%)] [&_svg]:pointer-events-none [&_svg]:shrink-0">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                             stroke-linecap="round" stroke-linejoin="round"
-                                            class="lucide lucide-github w-3 h-3">
+                                            class="lucide lucide-github w-3 h-3  group-hover:rotate-45 transition-transform">
                                             <path
                                                 d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
                                             </path>
@@ -520,7 +523,7 @@ showProjects.forEach(project => {
     let temp2 = document.createElement("div");
     project.lang.forEach(lang => {
         temp2.insertAdjacentHTML("beforeend", ` <div
-                                        class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-[hsl(212.7_26.8%_83.9%)] focus:ring-offset-2 border-transparent bg-[hsl(217.2_32.6%_17.5%)] text-[hsl(210_40%_98%)] hover:bg-[hsl(217.2_32.6%_17.5%_/_0.8)] text-xs">
+                                        class="inline-flex items-center rounded-full border border-transparent bg-[hsl(260_50%_15%)] text-[hsl(210_40%_98%)] hover:bg-[hsl(260_50%_15%_/_0.8)] px-2.5 py-0.5 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-[hsl(191_95%_55%)] focus:ring-offset-2 text-xs">
                                         ${lang}
                                     </div>`);
     });
