@@ -101,12 +101,15 @@
     .slide-in-bottom-fade {
         animation: slideInBottomFade 2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
     }
+
     .left-animated-sa {
         animation: left-animated 2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
     }
+
     .right-animated-sa {
         animation: right-animated 2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
     }
+
     .down-animated-sa {
         animation: down-animated 2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
     }
@@ -132,6 +135,8 @@
         animation-delay: 300ms;
     }
 
+
+
     .leftAnRightAnime {
         animation: left-Right 2s 1 cubic-bezier(0.4, 0, 0.2, 1) forwards;
     }
@@ -151,8 +156,21 @@
         background-clip: text;
     }
 
-    .skillsprogress{
-        
+    /* Progress Bar Animation */
+    .skill-progress-bar {
+        transform: translateX(-100%) !important;
+        transition: transform 3s cubic-bezier(0.4, 0, 0.2, 1);
+        will-change: transform;
+    }
+
+    .skill-progress-bar.animate-progress {
+        transform: var(--progress-transform) !important;
+    }
+
+    .popOut {
+        animation: popOut 3s cubic-bezier(0.4, 0, 0.2, 1);
+        will-change: transform;
+
     }
 
 
@@ -163,6 +181,13 @@
 
 
 
+
+    @keyframes popOut {
+        from{
+            transform: scale(0.4);
+        }
+
+    }
 
 
 
@@ -248,32 +273,37 @@
             left: 1200px;
         }
     }
-    
+
     @keyframes left-animated {
         0% {
             transform: translateX(-5vw);
             opacity: 0.1;
         }
+
         100% {
             transform: translateX(0vw);
             opacity: 1;
         }
     }
+
     @keyframes right-animated {
         0% {
             transform: translateX(5vw);
             opacity: 0.1;
         }
+
         100% {
             transform: translateX(0vw);
             opacity: 1;
         }
     }
+
     @keyframes down-animated {
         0% {
             transform: translateY(5vw);
             opacity: 0.1;
         }
+
         100% {
             transform: translateX(0vw);
             opacity: 1;
