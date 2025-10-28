@@ -67,8 +67,6 @@
 
 @layer base {
     body {
-
-
         background-color: #0b0e13;
         overflow-x: hidden;
         -webkit-font-smoothing: antialiased;
@@ -76,6 +74,10 @@
         margin: 0;
         font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
         scroll-behavior: smooth;
+    }
+
+    html {
+        overflow-x: hidden;
     }
 }
 
@@ -108,6 +110,7 @@
 
     .right-animated-sa {
         animation: right-animated 2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+
     }
 
     .down-animated-sa {
@@ -174,7 +177,105 @@
     }
 
 
+    .contact-card {
+        opacity: 0;
+        transform: translateY(20px);
+        /* Starts shifted down by 20px */
+        transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    }
 
+    /* Class added when in viewport (use JS to toggle this) */
+    .contact-card.in-view {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* Staggered delays for each item (apply these classes based on index, e.g., .contact-card:nth-child(1) gets .delay-0, etc.) */
+    .contact-card.delay-0 {
+        transition-delay: 0s;
+    }
+
+    .contact-card.delay-1 {
+        transition-delay: 0.1s;
+    }
+
+    .contact-card.delay-2 {
+        transition-delay: 0.2s;
+    }
+
+    .contact-card.delay-3 {
+        transition-delay: 0.3s;
+    }
+
+    /* Optional: Keyframes alternative if you prefer animation over transition (add .animate class instead of .in-view) */
+    @keyframes fadeSlideUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Service Item Animation */
+    .service-item {
+        opacity: 0;
+        transform: translateX(20px);
+        /* Starts shifted right by 20px */
+        transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    }
+
+    /* Class added when in viewport (use JS to toggle this) */
+    .service-item.in-view {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    /* Staggered delays for each item */
+    .service-item.delay-0 {
+        transition-delay: 0s;
+    }
+
+    .service-item.delay-1 {
+        transition-delay: 0.1s;
+    }
+
+    .service-item.delay-2 {
+        transition-delay: 0.2s;
+    }
+
+    /* Optional: Keyframes alternative if you prefer animation over transition */
+    @keyframes fadeSlideLeft {
+        from {
+            opacity: 0 !important;
+            transform: translateX(20px);
+        }
+
+        to {
+            opacity: 1 !important;
+            transform: translateX(0);
+        }
+    }
+
+    .service-item.animate {
+        animation: fadeSlideLeft 0.5s ease-out forwards;
+    }
+
+    /* Staggered animation delays */
+    .service-item.animate.delay-0 {
+        animation-delay: 0s;
+    }
+
+    .service-item.animate.delay-1 {
+        animation-delay: 0.1s;
+    }
+
+    .service-item.animate.delay-2 {
+        animation-delay: 0.2s;
+    }
 
 
 
@@ -183,7 +284,7 @@
 
 
     @keyframes popOut {
-        from{
+        from {
             transform: scale(0.4);
         }
 
@@ -221,7 +322,7 @@
 
     @keyframes slideInLeftFade {
         from {
-            transform: translateX(-100vw);
+            transform: translateX(-50vw);
             opacity: 0.3;
         }
 
@@ -231,9 +332,23 @@
         }
     }
 
+    @media (min-width: 769px) {
+        @keyframes slideInLeftFade {
+            from {
+                transform: translateX(-100vw);
+                opacity: 0.3;
+            }
+
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    }
+
     @keyframes slideInRightFade {
         from {
-            transform: translateX(100vw);
+            transform: translateX(50vw);
             opacity: 0.1;
         }
 
@@ -243,15 +358,43 @@
         }
     }
 
+    @media (min-width: 769px) {
+        @keyframes slideInRightFade {
+            from {
+                transform: translateX(100vw);
+                opacity: 0.1;
+            }
+
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    }
+
     @keyframes slideInBottomFade {
         from {
-            transform: translateY(100vh);
+            transform: translateY(50vh);
             opacity: 0.3;
         }
 
         to {
             transform: translateY(0);
             opacity: 1;
+        }
+    }
+
+    @media (min-width: 769px) {
+        @keyframes slideInBottomFade {
+            from {
+                transform: translateY(100vh);
+                opacity: 0.3;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
         }
     }
 
@@ -276,19 +419,33 @@
 
     @keyframes left-animated {
         0% {
-            transform: translateX(-5vw);
+            transform: translateX(-30px);
             opacity: 0.1;
         }
 
         100% {
             transform: translateX(0vw);
             opacity: 1;
+        }
+    }
+
+    @media (min-width: 769px) {
+        @keyframes left-animated {
+            0% {
+                transform: translateX(-5vw);
+                opacity: 0.1;
+            }
+
+            100% {
+                transform: translateX(0vw);
+                opacity: 1;
+            }
         }
     }
 
     @keyframes right-animated {
         0% {
-            transform: translateX(5vw);
+            transform: translateX(30px);
             opacity: 0.1;
         }
 
@@ -298,15 +455,43 @@
         }
     }
 
+    @media (min-width: 769px) {
+        @keyframes right-animated {
+            0% {
+                transform: translateX(5vw);
+                opacity: 0.1;
+            }
+
+            100% {
+                transform: translateX(0vw);
+                opacity: 1;
+            }
+        }
+    }
+
     @keyframes down-animated {
         0% {
-            transform: translateY(5vw);
+            transform: translateY(30px);
             opacity: 0.1;
         }
 
         100% {
             transform: translateX(0vw);
             opacity: 1;
+        }
+    }
+
+    @media (min-width: 769px) {
+        @keyframes down-animated {
+            0% {
+                transform: translateY(5vw);
+                opacity: 0.1;
+            }
+
+            100% {
+                transform: translateX(0vw);
+                opacity: 1;
+            }
         }
     }
 }
