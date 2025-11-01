@@ -2,40 +2,32 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!DOCTYPE html>
-    <html lang="en">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="View and download my CV" />
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../Assets/logo/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../Assets/logo/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../Assets/logo/favicon-16x16.png" />
+    <link rel="manifest" href="../Assets/logo/site.webmanifest" />
+    <link rel="icon" type="image/x-icon" href="../Assets/logo/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="192x192" href="../Assets/logo/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="../Assets/logo/android-chrome-512x512.png" />
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="View and download my CV" />
-        <!-- Favicon -->
-        <link rel="apple-touch-icon" sizes="180x180" href="../Assets/logo/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="../Assets/logo/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="../Assets/logo/favicon-16x16.png" />
-        <link rel="manifest" href="../Assets/logo/site.webmanifest" />
-        <link rel="icon" type="image/x-icon" href="../Assets/logo/favicon.ico" />
-        <link rel="icon" type="image/png" sizes="192x192" href="../Assets/logo/android-chrome-192x192.png" />
-        <link rel="icon" type="image/png" sizes="512x512" href="../Assets/logo/android-chrome-512x512.png" />
+    <link href="/dist/output.css" rel="stylesheet" />
 
-        <!-- Project styles and Tailwind build -->
-        <link rel="stylesheet" href="../style.css" />
-        <link href="/dist/output.css" rel="stylesheet" />
-
-        <title>CV — Zaid Khan</title>
-    </head>
+    <title>CV — Zaid Khan</title>
+</head>
 
 <body class="bg-[#0b0e13] text-[#f8fafc] w-full overflow-x-hidden">
     <header
         class="w-full navbar transition-all duration-300 ease-in h-[75px] flex justify-center items-center fixed top-0 left-0 right-0 z-[10000000000] bg-transparent">
         <nav class="fixed flex w-full justify-center max-w-[1400px] z-10 mx-auto slide-in-top">
             <div class="flex flex-row  items-center justify-between    w-[90%] mx-auto ">
-                <h1
-                    class="cursor-default bg-[linear-gradient(96deg,hsl(191,95%,55%)_0%,hsl(280,100%,70%)_100%)] bg-clip-text text-transparent text-[25px] font-bold transition-transform duration-500 ease-in-out hover:scale-110 z-50">
+                <a href="../index.html"
+                    class="cursor-pointer bg-[linear-gradient(96deg,hsl(191,95%,55%)_0%,hsl(280,100%,70%)_100%)] bg-clip-text text-transparent text-[25px] font-bold transition-transform duration-500 ease-in-out hover:scale-110 z-50">
                     Portfolio
-                </h1>
+                </a>
                 <div class="hidden md:contents  ">
                     <div class="flex justify-center items-center w-[530px] gap-1.5">
                         <a href="../index.html"
@@ -128,7 +120,7 @@
             </div>
         </nav>
     </header>
-    
+
     <!-- Mobile full-screen overlay menu -->
     <div
         class="mobile-overlay h-screen min-h-screen  bottom-0 right-0 top-0 z-[100000] w-full fixed inset-0 md:hidden hidden">
@@ -137,9 +129,10 @@
         </div>
         <div
             class="mobile-overlay-panel relative z-50 flex flex-col items-center justify-center h-full gap-6 px-6 opacity-0 -translate-y-full transition-transform  duration-300">
-            <a href=".././index.html" class="text-[#f8fafc] text-lg  font-medium flex items-center gap-3 anim-delay-0">
+            <a href="../index.html" class="text-[#f8fafc] text-lg  font-medium flex items-center gap-3 anim-delay-0">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="w-5 h-5">
                     <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
                     <path
                         d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z">
@@ -149,7 +142,8 @@
             </a>
             <a href="./about.html" class="text-[#f8fafc] text-lg font-medium flex items-center gap-3 anim-delay-100">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="w-5 h-5">
                     <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
                     <circle cx="12" cy="7" r="4"></circle>
                 </svg>
@@ -157,7 +151,8 @@
             </a>
             <a href="./projects.html" class="text-[#f8fafc] text-lg font-medium flex items-center gap-3 anim-delay-200">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="w-5 h-5">
                     <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
                     <rect width="20" height="14" x="2" y="6" rx="2"></rect>
                 </svg>
@@ -165,7 +160,8 @@
             </a>
             <a href="./skills.html" class="text-[#f8fafc] text-lg font-medium flex items-center gap-3 anim-delay-300">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="w-5 h-5">
                     <polyline points="16 18 22 12 16 6"></polyline>
                     <polyline points="8 6 2 12 8 18"></polyline>
                 </svg>
@@ -173,7 +169,8 @@
             </a>
             <a href="./contact.html" class="text-[#f8fafc] text-lg font-medium flex items-center gap-3">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5">
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="w-5 h-5">
                     <rect width="20" height="16" x="2" y="4" rx="2"></rect>
                     <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
                 </svg>
@@ -183,14 +180,38 @@
     </div>
 
     <main>
-        <section class="pt-20 px-6 ">
+        <section class="pt-28 px-4 sm:px-6">
             <div
-                class="max-w-5xl mx-auto backdrop-blur-sm bg-[hsla(220,25%,8%,.6)] border border-[#1fd1f933] rounded-2xl p-4 md:p-6 shamado animate-in-up">
-                <div class="w-full aspect-[3/4] md:aspect-[5/7] h-screen md:h-[80vh]">
+                class="w-full max-w-5xl mx-auto backdrop-blur-sm bg-[hsla(220,25%,8%,.6)] border border-[#1fd1f933] rounded-2xl p-4 md:p-6 shamado animate-in-up">
+                <div class="w-full h-[65vh] sm:h-[72vh] md:h-[80vh] min-h-[420px] rounded-xl overflow-hidden">
                     <iframe
                         class="w-full h-full rounded-xl border border-[#00bfff4d] shadow-[inset_0_0_33px_8px_rgba(0,191,255,0.08)]"
                         src="https://zaid-khan-code.web.app/Assets/Resume/Zaid%20Offical%20CV.pdf" title="Zaid Khan CV"
                         loading="lazy"></iframe>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-3 justify-center mt-6">
+                    <a href="../Assets/Resume/Zaid Offical CV.pdf" download
+                        class="inline-flex items-center justify-center gap-2 rounded-lg px-6 py-3 font-semibold text-[15px] bg-gradient-to-r from-cyan-400 to-fuchsia-400 text-[#0b0e13] hover:from-cyan-300 hover:to-fuchsia-300 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="w-5 h-5">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" x2="12" y1="15" y2="3"></line>
+                        </svg>
+                        Download CV
+                    </a>
+                    <a href="../Assets/Resume/Zaid Offical CV.pdf" target="_blank" rel="noopener"
+                        class="inline-flex items-center justify-center gap-2 rounded-lg px-6 py-3 font-medium text-[15px] border border-[#00bfff4d] hover:border-[#00bfff] hover:bg-[hsla(280,100%,70%,.15)] transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="w-5 h-5">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <path d="M15 3h6v6"></path>
+                            <path d="M10 14 21 3"></path>
+                        </svg>
+                        Open in new tab
+                    </a>
                 </div>
             </div>
         </section>
@@ -210,17 +231,16 @@
                             Creating exceptional digital experiences with cutting-edge technology and innovative design.
                             Let's build something amazing together.</p>
                         <div class="space-y-3 mb-6">
-                            <div class="flex items-center gap-3 text-sm text-[hsl(210_20%_65%)]">
+                            <div class="flex items-center gap-3 text-sm text-muted-foreground">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round"
                                     class="lucide leftiy lucide-mail w-4 h-4 text-[hsl(191,95%,55%)]">
                                     <rect width="20" height="16" x="2" y="4" rx="2"></rect>
                                     <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-                                </svg><span
-                                    class="text-[hsl(191,95%,55%)] leftiy leftiy">zaidbinasif468@gmail.com</span>
+                                </svg><span class="text-[hsl(191,95%,55%)] leftiy leftiy">zaidbinasif468@gmail.com</span>
                             </div>
-                            <div class="flex items-center gap-3 text-sm text-[hsl(210_20%_65%)]">
+                            <div class="flex items-center gap-3 text-sm text-muted-foreground">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round"
@@ -231,7 +251,7 @@
                                 </svg>
                                 <span class="text-[hsl(191,95%,55%)] leftiy">+92 3213809914</span>
                             </div>
-                            <div class="flex items-center gap-3 text-sm text-[hsl(210_20%_65%)]">
+                            <div class="flex items-center gap-3 text-sm text-muted-foreground">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round"
@@ -282,37 +302,35 @@
                         </div>
                     </div>
                     <div style="opacity: 1; transform: none;">
-                        <h4 class="font-semibold text-[hsl(210_40%_98%)] mb-4 rightiy">Quick Links</h4>
+                        <h4 class="font-semibold text-foreground mb-4 text-[#f8fafb] rightiy">Quick Links</h4>
                         <ul class="space-y-3 ">
-                            <li class="rightiy"><a href=".././index.html"
+                            <li class="rightiy"><a href="./index.html"
                                     class="text-[#94a6b8] hover:text-[hsl(191,95%,55%)] transition-colors text-sm">Home</a>
                             </li>
-                            <li class="rightiy"><a href="./about.html"
+                            <li class="rightiy"><a href="./Pages/about.html"
                                     class="text-[#94a6b8] hover:text-[hsl(191,95%,55%)] transition-colors text-sm">About</a>
                             </li>
-                            <li class="rightiy"><a href="./projects.html"
+                            <li class="rightiy"><a href="./Pages/projects.html"
                                     class="text-[#94a6b8] hover:text-[hsl(191,95%,55%)] transition-colors text-sm">Projects</a>
                             </li>
-                            <li class="rightiy"><a href="./skills.html"
+                            <li class="rightiy"><a href="./Pages/skills.html"
                                     class="text-[#94a6b8] hover:text-[hsl(191,95%,55%)] transition-colors text-sm">Skills</a>
                             </li>
-                            <li class="rightiy"><a href="./contact.html"
+                            <li class="rightiy"><a href="./Pages/contact.html"
                                     class="text-[#94a6b8] hover:text-[hsl(191,95%,55%)] transition-colors text-sm">Contact</a>
                             </li>
                         </ul>
                     </div>
                     <div style="opacity: 1; transform: none;">
-                        <h4 class="font-semibold rightiy text-[hsl(210_40%_98%)] mb-4">Services</h4>
+                        <h4 class="font-semibold rightiy text-foreground mb-4  text-[#f8fafb]">Services</h4>
                         <ul class="space-y-3">
                             <li class="rightiy">
-                                <a href="#"
-                                    class="text-[#94a6b8] hover:text-[hsl(191,95%,55%)] transition-colors text-sm">
+                                <a href="#" class="text-[#94a6b8] hover:text-[hsl(191,95%,55%)] transition-colors text-sm">
                                     Web Development
                                 </a>
                             </li>
                             <li class="rightiy">
-                                <a href="#"
-                                    class="text-[#94a6b8] hover:text-[hsl(191,95%,55%)] transition-colors text-sm">
+                                <a href="#" class="text-[#94a6b8] hover:text-[hsl(191,95%,55%)] transition-colors text-sm">
                                     Maintenance
                                 </a>
                             </li>
@@ -320,23 +338,22 @@
                     </div>
                 </div>
             </div>
-            <div data-orientation="horizontal" role="none" class="h-[1px] w-full rightiy bg-[hsl(217.2,32.6%,17.5%)]">
-            </div>
+            <div data-orientation="horizontal" role="none" class="h-[1px] w-full rightiy bg-[hsl(217.2,32.6%,17.5%)]"></div>
             <div class="container mx-auto px-6 py-6">
                 <div class="flex flex-col md:flex-row justify-between items-center gap-4" style="opacity: 1;">
-                    <p class="text-sm text-[#94a6b8] text-center md:text-left leftiy">© 2025 Portfolio. All rights
+                    <p class="text-sm text-[#94a6b8] text-center md:text-left downiy">© 2025 Portfolio. All rights
                         reserved.
                     </p>
                     <div class="flex items-center gap-1 text-sm text-[#94a6b8]">
-                        <span class="leftiy">Made with</span>
+                        <span class="downiy">Made with</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-heart leftiy w-4 h-4 text-red-500 fill-current">
+                            class="lucide lucide-heart downiy w-4 h-4 text-red-500 fill-current">
                             <path
                                 d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
                             </path>
                         </svg>
-                        <span class="leftiy">using Tailwind CSS</span>
+                        <span class="downiy">using Tailwind CSS</span>
                     </div>
                 </div>
             </div>
@@ -345,7 +362,5 @@
 
     <script type="module" src="../scripts/cv.js"></script>
 </body>
-
-</html>
 
 </html>

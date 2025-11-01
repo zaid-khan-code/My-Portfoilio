@@ -96,7 +96,7 @@ function animations() {
     downiy.forEach(box1 => {
         let boxArray = box1.getBoundingClientRect();
         if (boxArray.top <= window.innerHeight && boxArray.bottom >= 0) {
-            box1.classList.add("slide-in-bottom-fade")
+            box1.classList.add("left-animated-sa")
         };
     });
     let mafazaLeft = document.querySelectorAll(".mafazaLeft");
@@ -117,24 +117,9 @@ function animations() {
     mafazaDown.forEach(box1 => {
         let boxArray = box1.getBoundingClientRect();
         if (boxArray.top <= window.innerHeight && boxArray.bottom >= 0) {
-            box1.classList.add("down-animated-sa")
+            box1.classList.add("left-animated-sa")
         };
     });
-
-    // Progress bar animation
-    let progressBars = document.querySelectorAll(".skill-progress-bar");
-    progressBars.forEach(bar => {
-        let boxArray = bar.getBoundingClientRect();
-        if (boxArray.top <= window.innerHeight && boxArray.bottom >= 0) {
-            if (!bar.classList.contains("animate-progress")) {
-                // Get the inline transform value (the target position)
-                const inlineTransform = bar.style.transform || 'translateX(0)';
-                bar.style.setProperty('--progress-transform', inlineTransform);
-                bar.classList.add("animate-progress");
-            }
-        }
-    });
-
 }
 window.addEventListener("scroll", animations);
 window.addEventListener("load", animations);

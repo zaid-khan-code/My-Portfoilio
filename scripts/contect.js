@@ -158,6 +158,30 @@ function animations() {
     });
 
 }
+function sendingEmail() {
+    let emailEl = document.querySelector(`.input-field-email`);
+    let nameEl = document.querySelector(`.input-field-name`);
+    let subjectEl = document.querySelector(`.input-field-subject`);
+    let messageEl = document.querySelector(`.input-field-message`);
+    if (!nameEl.checkValidity() || !emailEl.checkValidity() || !subjectEl.checkValidity() || !messageEl.checkValidity()) {
+        nameEl.reportValidity();
+        subjectEl.reportValidity();
+        messageEl.reportValidity();
+        emailEl.reportValidity(); 
+        return;
+    } else {
+        window.location.href = `https://mail.google.com/mail/u/0/?fs=1&to=zaidbinasif468@gmail.com&su=${subjectEl.value}&body=Hello my name is ${nameEl.value} and ${messageEl.value}&tf=cm`;
+        return;
+    }
+};
+
 window.addEventListener("scroll", animations);
 window.addEventListener("load", animations);
 window.addEventListener("load", navbar);
+
+
+const submitBtnEl = document.querySelector(`.submit-Btn`);
+submitBtnEl.addEventListener(`click`, (e) => {
+    sendingEmail()
+    e.preventDefault();
+});
