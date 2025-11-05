@@ -170,7 +170,7 @@ function sendingEmail() {
         emailEl.reportValidity(); 
         return;
     } else {
-        window.location.href = `https://mail.google.com/mail/u/0/?fs=1&to=zaidbinasif468@gmail.com&su=${subjectEl.value}&body=Hello my name is ${nameEl.value} and ${messageEl.value}&tf=cm`;
+        window.location.href = `https://mail.google.com/mail/u/0/?fs=1&to=zaid.k.khalil468@gmail.com&su=${subjectEl.value}&body=Hello my name is ${nameEl.value} and ${messageEl.value}&tf=cm`;
         return;
     }
 };

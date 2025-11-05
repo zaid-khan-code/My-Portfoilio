@@ -159,110 +159,110 @@ let frontEndSkills = [
         skill: "JavaScript (ES6+)",
         progess: 85
     },
-    {
-        skill: "React.js",
-        progess: 0
-    },
-    {
-        skill: "Next.js",
-        progess: 0
-    },
-    {
-        skill: "TypeScript",
-        progess: 0
-    },
-    {
-        skill: "Three.js/WebGL",
-        progess: 0
-    },
-    {
-        skill: "Framer Motion",
-        progess: 0
-    }
+    // {
+    //     skill: "React.js",
+    //     progess: 0
+    // },
+    // {
+    //     skill: "Next.js",
+    //     progess: 0
+    // },
+    // {
+    //     skill: "TypeScript",
+    //     progess: 0
+    // },
+    // {
+    //     skill: "Three.js/WebGL",
+    //     progess: 0
+    // },
+    // {
+    //     skill: "Framer Motion",
+    //     progess: 0
+    // }
 ];
 
 let backEndSkills = [
-    {
-        skill: "Node.js",
-        progess: 0
-    },
-    {
-        skill: "Express.js",
-        progess: 0
-    },
+    // {
+    //     skill: "Node.js",
+    //     progess: 0
+    // },
+    // {
+    //     skill: "Express.js",
+    //     progess: 0
+    // },
     {
         skill: "Firebase Authentication & Firestore",
         progess: 70
     },
-    {
-        skill: "MongoDB",
-        progess: 0
-    },
-    {
-        skill: "Python",
-        progess: 0
-    },
-    {
-        skill: "Django",
-        progess: 0
-    },
-    {
-        skill: "SQL",
-        progess: 0
-    },
-    {
-        skill: "Postman API",
-        progess: 0
-    },
-    {
-        skill: "Rest API",
-        progess: 0
-    },
+    // {
+    //     skill: "MongoDB",
+    //     progess: 0
+    // },
+    // {
+    //     skill: "Python",
+    //     progess: 0
+    // },
+    // {
+    //     skill: "Django",
+    //     progess: 0
+    // },
+    // {
+    //     skill: "SQL",
+    //     progess: 0
+    // },
+    // {
+    //     skill: "Postman API",
+    //     progess: 0
+    // },
+    // {
+    //     skill: "Rest API",
+    //     progess: 0
+    // },
 ];
 
 
-let CloudAndDevOpsSkills = [
-    {
-        skill: "AWS",
-        progess: 0
-    },
-    {
-        skill: "Google Cloud",
-        progess: 0
-    },
-    {
-        skill: "Docker",
-        progess: 0
-    },
-    {
-        skill: "Kubernetes",
-        progess: 0
-    },
-    {
-        skill: "CI/CD",
-        progess: 0
-    }
-];
+// let CloudAndDevOpsSkills = [
+//     {
+//         skill: "AWS",
+//         progess: 0
+//     },
+//     {
+//         skill: "Google Cloud",
+//         progess: 0
+//     },
+//     {
+//         skill: "Docker",
+//         progess: 0
+//     },
+//     {
+//         skill: "Kubernetes",
+//         progess: 0
+//     },
+//     {
+//         skill: "CI/CD",
+//         progess: 0
+//     }
+// ];
 
 
-let MobileDevelopmentSkills = [
-    {
-        skill: "React Native",
-        progess: 0
-    },
-    {
-        skill: "Flutter",
-        progess: 0
-    },
-    {
-        skill: "iOS (Swift)",
-        progess: 0
-    },
-    {
-        skill: "Android (Kotlin)",
-        progess: 0
-    }
-];
+// let MobileDevelopmentSkills = [
+//     {
+//         skill: "React Native",
+//         progess: 0
+//     },
+//     {
+//         skill: "Flutter",
+//         progess: 0
+//     },
+//     {
+//         skill: "iOS (Swift)",
+//         progess: 0
+//     },
+//     {
+//         skill: "Android (Kotlin)",
+//         progess: 0
+//     }
+// ];
 
 
 let DesignAndToolsSkills = [
@@ -353,14 +353,14 @@ createSkillCard(backEndSkills, `<svg xmlns="http://www.w3.org/2000/svg" width="2
     <line x1="6" x2="6.01" y1="18" y2="18"></line>
 </svg>`, "Back-End Development");
 
-createSkillCard(CloudAndDevOpsSkills, `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cloud w-6 h-6 text-[hsl(191_95%_55%)]">
-    <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
-</svg>`, "Cloud & DevOps");
+// createSkillCard(CloudAndDevOpsSkills, `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-cloud w-6 h-6 text-[hsl(191_95%_55%)]">
+//     <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
+// </svg>`, "Cloud & DevOps");
 
-createSkillCard(MobileDevelopmentSkills, `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-smartphone w-6 h-6 text-[hsl(191_95%_55%)]">
-    <rect width="14" height="20" x="5" y="2" rx="2" ry="2"></rect>
-    <path d="M12 18h.01"></path>
-</svg>`, "Mobile Development");
+// createSkillCard(MobileDevelopmentSkills, `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-smartphone w-6 h-6 text-[hsl(191_95%_55%)]">
+//     <rect width="14" height="20" x="5" y="2" rx="2" ry="2"></rect>
+//     <path d="M12 18h.01"></path>
+// </svg>`, "Mobile Development");
 
 createSkillCard(DesignAndToolsSkills, `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wrench w-6 h-6 text-[hsl(191_95%_55%)]">
     <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
