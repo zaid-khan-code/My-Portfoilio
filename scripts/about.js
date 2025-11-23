@@ -76,7 +76,7 @@ navbar();
 let educationObj = [{
     study: "Intermediate (1st Year, Computer Science)",
     address: "Government Degree Boys College - KMC Store • Karachi, Pakistan",
-    date: "2025-2027",
+    date: "2025 - Present",
     desc: "Currently pursuing my first year of Intermediate studies with a focus on Computer Science and foundational programming concepts. Building strong analytical and problem-solving skills while developing projects in web development and software fundamentals.",
     achiv: ["Enrolled (1st Year)", "Computer Science", "Mathematics", "Physics"],
     ani: "mafazaLeft"
@@ -146,20 +146,28 @@ let educationObj = [{
 
 
 
-let expObj = [{
-    role: "Lead Generation Chat Executive",
-    address: "GlobiumClouds • Karachi, Pakistan",
-    date: "March 2025 – May 2025",
-    desc: "Handled live chat communications, generated qualified leads, and supported the sales team by managing customer queries effectively.",
-    skilled: ["Customer (Communication)", "Lead Generation", "CRM Tools", "Team Collaboration"],
-    ani:"mafazaRight"
-}].forEach(xpData => {
-    let container = document.querySelector(`.experianceSec`);
-    let html = ``;
+let expObj = [
+    {
+        role: "Frontend Developer Internship",
+        address: "Electronic Safety & Security Private Limited",
+        date: "Nov 2025 – Present",
+        desc: "Working as a Frontend Developer at Electronic Safety & Security, I design and implement responsive web interfaces using React, Tailwind, Firebase, and GitHub. I contribute to UI/UX improvements, build dynamic features, and collaborate on projects to enhance user experience and functionality.",
+        skilled: ["React.js", "Tailwind CSS", "JavaScript", "HTML5 & CSS3", "Responsive Design / Mobile-First Design", "Git & GitHub (version control)", "Firebase (Authentication, Firestore)", "JavaScript (ES6+)"],
+        ani: "mafazaLeft"
+    }, {
+        role: "Lead Generation Chat Executive",
+        address: "GlobiumClouds • Karachi, Pakistan",
+        date: "March 2025 – May 2025",
+        desc: "Handled live chat communications, generated qualified leads, and supported the sales team by managing customer queries effectively.",
+        skilled: ["Customer (Communication)", "Lead Generation", "CRM Tools", "Team Collaboration"],
+        ani: "mafazaRight"
+    }].forEach(xpData => {
+        let container = document.querySelector(`.experianceSec`);
+        let html = ``;
 
-    let temp = document.createElement("div");
+        let temp = document.createElement("div");
 
-    html = `<div class="${xpData.ani}" style="opacity: 1; transform: none;">
+        html = `<div class="${xpData.ani}" style="opacity: 1; transform: none;">
                         <div class="rounded-lg border text-[hsl(210,40%,98%)] shadow-[0_20px_40px_-8px_hsla(191,95%,55%,0.2)]
                             border-[hsl(191,95%,55%,0.2)] bg-[hsl(220,25%,8%,0.5)] backdrop-blur-sm hover:bg-[hsl(220,25%,8%,0.8)] transition-all
                             duration-300">
@@ -193,17 +201,17 @@ let expObj = [{
                             </div>
                         </div>
                     </div>`
-    temp.innerHTML = html;
-    let xpSec = temp.firstElementChild;
-    container.append(xpSec);
+        temp.innerHTML = html;
+        let xpSec = temp.firstElementChild;
+        container.append(xpSec);
 
-    let container2 = xpSec.querySelector(".xpSecSkills");
-    let temp2 = document.createElement("div");
-    xpData.skilled.forEach(xpski => {
-       temp2.insertAdjacentHTML("beforeend", `<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-[hsl(191,95%,55%)] focus:ring-offset-2 border-transparent bg-[hsl(260,50%,15%)] text-[hsl(210,40%,98%)] hover:bg-[hsl(260,50%,15%)/0.8]">${xpski}</div>`);
+        let container2 = xpSec.querySelector(".xpSecSkills");
+        let temp2 = document.createElement("div");
+        xpData.skilled.forEach(xpski => {
+            temp2.insertAdjacentHTML("beforeend", `<div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-[hsl(191,95%,55%)] focus:ring-offset-2 border-transparent bg-[hsl(260,50%,15%)] text-[hsl(210,40%,98%)] hover:bg-[hsl(260,50%,15%)/0.8]">${xpski}</div>`);
+        });
+        container2.append(...temp2.childNodes);
     });
-    container2.append(...temp2.childNodes);
-});
 function animations() {
     let leftiy = document.querySelectorAll(".leftiy");
     let rightiy = document.querySelectorAll(".rightiy");

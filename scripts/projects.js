@@ -1,4 +1,3 @@
-
 function navbar() {
 
     window.addEventListener("scroll", function () {
@@ -125,7 +124,17 @@ window.addEventListener("load", navbar);
 
 export const projects = [
     {
-        Project: 1,
+        title: "The-Social-Network",
+        image: "../Assets/Images/the-social.png",
+        descrip: "A simple social media platform built for a hackathon, allowing users to create posts, delete them, and add likes. The project uses localStorage for user login, signup, and post persistence, making it fully functional without a backend. Designed with HTML, Tailwind CSS, JavaScript, and Lucide Icons, it delivers a clean and responsive interface while showcasing core frontend development skills.",
+        lang: ["HTML", "Tailwind CSS", "JavaScript", "Lucide Icons", "LocalStorage"],
+        projectLink: "https://hackthon-zaid-project.web.app/",
+        repoLink: "https://github.com/zaid-khan-code/The-Soical-Network",
+        ani: "mafazaRight",
+        devs: 1,
+        took: "6 Hours"
+    },
+    {
         title: "My Professional Portfoilio",
         image: "../Assets/Images/portflio.png",
         descrip: "A sleek, responsive personal portfolio website built to showcase skills, projects and experience in a modern web-development stack. It highlights HTML, CSS and JavaScript (with a heavy emphasis on Tailwind CSS for utility-first styling) and is ideal for web developers looking to present themselves professionally.",
@@ -137,7 +146,6 @@ export const projects = [
         took: "12 Days"
     },
     {
-        Project: 2,
         title: "Sell-In A simple Ecommerce web app",
         image: "../Assets/Images/Sell-In.png",
         descrip: "A simple Ecommerce web app built using Firebase Authentication, Firestore, and Vanilla JavaScript. This project allows users to sign up, log in, post ads, and browse listings — all with a clean responsive UI. The Sellin project replicates the core functionality of the Ecommerce marketplace — enabling users to buy and sell products through a Firebase-powered web interface. Users can create an account, log in, view listings, and add new products with image uploads and details.",
@@ -149,7 +157,6 @@ export const projects = [
         took: "5 Days"
     },
     {
-        Project: 3,
         title: "Rock-Paper-Scissors – Browser Game",
         image: "../Assets/Images/rock-paper-scissors .png",
         descrip: "A dynamic Rock-Paper-Scissors browser game, showcasing responsive design, AI-assisted UI, and handcrafted HTML, CSS, JavaScript logic for interactive, enjoyable, and persistent user experiences.",
@@ -161,7 +168,6 @@ export const projects = [
         took: "3 Days"
     },
     {
-        Project: 4,
         title: "Head Tail – Browser Game",
         image: "../Assets/Images/head-tail-game.png",
         descrip: "A responsive coin-flip game demonstrating interactive front-end design, featuring AI-assisted UI with handcrafted HTML, CSS, and JavaScript logic for real-time results, smooth animations, and persistent tracking.",
@@ -173,7 +179,6 @@ export const projects = [
         ani: "mafazaDown"
     },
     {
-        Project: 5,
         title: "Responsive Netflix UI Clone – Pure HTML & CSS",
         image: "../Assets/Images/netflix-clone.png",
         descrip: "A comprehensive demonstration of responsive front-end engineering, utilizing only native HTML and pure CSS to perfectly emulate the global streaming service user interface.",
@@ -185,7 +190,6 @@ export const projects = [
         ani: "mafazaRight"
     },
     {
-        Project: 6,
         title: "Responsive Devago UI Clone – Pure HTML & CSS Web Starter",
         image: "../Assets/Images/devago-clone.png",
         descrip: "Devago is a responsive, lightweight starter kit built entirely with pure HTML and CSS, offering developers a structured, scalable foundation to efficiently launch and develop web applications.",
@@ -197,7 +201,6 @@ export const projects = [
         ani: "mafazaLeft"
     },
     {
-        Project: 7,
         title: "OLD Portfolio – Interactive Personal Website Starter",
         image: "../Assets/Images/portfoli.png",
         descrip: "Portfolio is a responsive, versatile starter project built with pure HTML, CSS, and JavaScript. This project was fully generated with the assistance of AI, without any manually written code, showcasing the power of AI-driven development in creating professional, interactive, and visually engaging personal websites, resumes, and portfolios.",
