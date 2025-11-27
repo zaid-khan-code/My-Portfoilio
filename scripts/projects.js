@@ -124,7 +124,7 @@ window.addEventListener("load", navbar);
 
 export const projects = [
     {
-        title: "The-Social-Network",
+        title: "The Social Network",
         image: "../Assets/Images/the-social.png",
         descrip: "A simple social media platform built for a hackathon, allowing users to create posts, delete them, and add likes. The project uses localStorage for user login, signup, and post persistence, making it fully functional without a backend. Designed with HTML, Tailwind CSS, JavaScript, and Lucide Icons, it delivers a clean and responsive interface while showcasing core frontend development skills.",
         lang: ["HTML", "Tailwind CSS", "JavaScript", "Lucide Icons", "LocalStorage"],

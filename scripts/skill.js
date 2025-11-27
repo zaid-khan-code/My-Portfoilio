@@ -159,14 +159,14 @@ let frontEndSkills = [
         skill: "JavaScript (ES6+)",
         progess: 85
     },
-    // {
-    //     skill: "React.js",
-    //     progess: 0
-    // },
-    // {
-    //     skill: "Next.js",
-    //     progess: 0
-    // },
+    {
+        skill: "React.js",
+        progess: 30
+    },
+    {
+        skill: "Next.js",
+        progess: 10
+    },
     // {
     //     skill: "TypeScript",
     //     progess: 0
@@ -285,6 +285,20 @@ let DesignAndToolsSkills = [
     {
         skill: "Jasmine Testing",
         progess: 50
+    },
+    {
+        skill: "Vercel hosting",
+        progess: 80
+    }
+    ,
+    {
+        skill: "Netlify hosting",
+        progess: 95
+    }
+    ,
+    {
+        skill: "Firebase hosting",
+        progess: 99
     }
 ];
 
