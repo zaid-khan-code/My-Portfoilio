@@ -129,21 +129,9 @@ export const projects = [
         descrip: "A simple social media platform built for a hackathon, allowing users to create posts, delete them, and add likes. The project uses localStorage for user login, signup, and post persistence, making it fully functional without a backend. Designed with HTML, Tailwind CSS, JavaScript, and Lucide Icons, it delivers a clean and responsive interface while showcasing core frontend development skills.",
         lang: ["HTML", "Tailwind CSS", "JavaScript", "Lucide Icons", "LocalStorage"],
         projectLink: "https://hackthon-zaid-project.web.app/",
-        repoLink: "https://github.com/zaid-khan-code/The-Soical-Network",
         ani: "mafazaRight",
         devs: 1,
         took: "6 Hours"
-    },
-    {
-        title: "My Professional Portfoilio",
-        image: "../Assets/Images/portflio.png",
-        descrip: "A sleek, responsive personal portfolio website built to showcase skills, projects and experience in a modern web-development stack. It highlights HTML, CSS and JavaScript (with a heavy emphasis on Tailwind CSS for utility-first styling) and is ideal for web developers looking to present themselves professionally.",
-        lang: ["html", "CSS", "Tailwind CSS", "Javascript", "Github"],
-        projectLink: "https://zaid-khan-code.web.app/",
-        repoLink: "https://github.com/zaid-khan-code/My-Portfoilio",
-        ani: "mafazaLeft",
-        devs: 1,
-        took: "12 Days"
     },
     {
         title: "Sell-In A simple Ecommerce web app",
@@ -151,7 +139,6 @@ export const projects = [
         descrip: "A simple Ecommerce web app built using Firebase Authentication, Firestore, and Vanilla JavaScript. This project allows users to sign up, log in, post ads, and browse listings — all with a clean responsive UI. The Sellin project replicates the core functionality of the Ecommerce marketplace — enabling users to buy and sell products through a Firebase-powered web interface. Users can create an account, log in, view listings, and add new products with image uploads and details.",
         lang: ["html", "CSS", "Tailwind Css", "Javascript", "Github", "firebase Auth", "Firebase Firestore"],
         projectLink: "https://sellin-code.web.app/",
-        repoLink: "https://github.com/zaid-khan-code/Sellin",
         ani: "mafazaRight",
         devs: 1,
         took: "5 Days"
@@ -162,7 +149,6 @@ export const projects = [
         descrip: "A dynamic Rock-Paper-Scissors browser game, showcasing responsive design, AI-assisted UI, and handcrafted HTML, CSS, JavaScript logic for interactive, enjoyable, and persistent user experiences.",
         lang: ["html", "CSS", "Javascript", "Github"],
         projectLink: "https://rock-paper-scissors-a.netlify.app/",
-        repoLink: "https://github.com/zaid-khan-code/Advance-Rock-Paper-Scissors-Game",
         ani: "mafazaLeft",
         devs: 1,
         took: "3 Days"
@@ -173,7 +159,6 @@ export const projects = [
         descrip: "A responsive coin-flip game demonstrating interactive front-end design, featuring AI-assisted UI with handcrafted HTML, CSS, and JavaScript logic for real-time results, smooth animations, and persistent tracking.",
         lang: ["HTML", "CSS", "JavaScript", "Github"],
         projectLink: "https://head-tail-a.netlify.app/",
-        repoLink: "https://github.com/zaid-khan-code/Advance-Heads-Tails-Game-main",
         took: "2 Days",
         devs: 1,
         ani: "mafazaDown"
@@ -184,7 +169,6 @@ export const projects = [
         descrip: "A comprehensive demonstration of responsive front-end engineering, utilizing only native HTML and pure CSS to perfectly emulate the global streaming service user interface.",
         lang: ["HTML", "CSS", "Github"],
         projectLink: "https://solo-dev-clone.netlify.app/",
-        repoLink: "https://github.com/zaid-khan-code/Netflix",
         took: "7 Days",
         devs: 1,
         ani: "mafazaRight"
@@ -195,7 +179,6 @@ export const projects = [
         descrip: "Devago is a responsive, lightweight starter kit built entirely with pure HTML and CSS, offering developers a structured, scalable foundation to efficiently launch and develop web applications.",
         lang: ["HTML", "CSS", "Github"],
         projectLink: "https://devago-solo-dev.netlify.app/",
-        repoLink: "https://github.com/zaid-khan-code/Devago",
         took: "6 Days",
         devs: 1,
         ani: "mafazaLeft"
@@ -206,7 +189,6 @@ export const projects = [
         descrip: "Portfolio is a responsive, versatile starter project built with pure HTML, CSS, and JavaScript. This project was fully generated with the assistance of AI, without any manually written code, showcasing the power of AI-driven development in creating professional, interactive, and visually engaging personal websites, resumes, and portfolios.",
         lang: ["HTML", "CSS", "Github"],
         projectLink: "https://my-portfolio-codes.netlify.app/",
-        repoLink: "https://github.com/zaid-khan-code/Portfolio",
         took: "2 Days",
         ani: "mafazaDown",
         devs: 1,
@@ -291,16 +273,7 @@ showBigProjects.forEach(project => {
                                     </svg>
                                     Live Demo
                                     </a>
-                                    <a href="${project.repoLink}" target="_blank"
-                                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[hsl(191_95%_55%)] focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-[hsl(191_95%_55%_/_0.3)] bg-[hsl(220_25%_6%)] text-[hsl(210_40%_98%)] hover:bg-[hsl(280_100%_70%)] hover:text-[hsl(220_25%_6%)] hover:border-[hsl(191_95%_55%)] h-10 px-4 py-2 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0"><svg
-                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" class="lucide lucide-github w-4 h-4 mr-2">
-                                        <path
-                                            d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
-                                        </path>
-                                        <path d="M9 18c-4.51 2-5-2-7-2"></path>
-                                    </svg>Source Code</a></div>
+                                    </div>
                         </div>
                     </div>`;
 
@@ -394,18 +367,7 @@ showBigProjects2.forEach(project => {
                                         <path d="M15 3h6v6"></path>
                                         <path d="M10 14 21 3"></path>
                                         <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                    </svg>Live Demo</a><a href="${project.repoLink}" target="_blank"
-                                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[hsl(191_95%_55%)] focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-[hsl(191_95%_55%_/_0.3)] bg-[hsl(220_25%_6%)] text-[hsl(210_40%_98%)] hover:bg-[hsl(280_100%_70%)] hover:text-[hsl(220_25%_6%)] hover:border-[hsl(191_95%_55%)] h-10 px-4 py-2 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0"><svg
-                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" class="lucide lucide-github w-4 h-4 mr-2">
-                                        <path
-                                            d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
-                                        </path>
-                                        <path d="M9 18c-4.51 2-5-2-7-2"></path>
-                                    </svg>
-                                        Source Code
-                                        </a>
+                                    </svg>Live Demo</a>
                                     </div>
                         </div>
                     </div>`;
@@ -501,17 +463,7 @@ showProjects.forEach(project => {
                                             <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                                         </svg>Demo
                                     </a>
-                                    <a href="${project.repoLink}" target="_blank" class="ring-offset-[hsl(222.2_84%_4.9%)] focus:ring-[hsl(212.7_26.8%_83.9%)] [&_svg]:w-4 [&_svg]:h-4 h-9 px-3 inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[hsl(191_95%_55%)] focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-[hsl(191_95%_55%/_0.3)] bg-[hsl(220_25%_6%)] text-[hsl(210_40%_98%)] hover:bg-[hsl(280_100%_70%)] hover:text-[hsl(220_25%_6%)] hover:border-[hsl(191_95%_55%)] [&_svg]:pointer-events-none [&_svg]:shrink-0">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="lucide lucide-github w-3 h-3  group-hover:rotate-45 transition-transform">
-                                            <path
-                                                d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
-                                            </path>
-                                            <path d="M9 18c-4.51 2-5-2-7-2"></path>
-                                        </svg>
-                                    </a>
+                                    
                                 </div>
                             </div>
                         </div>
