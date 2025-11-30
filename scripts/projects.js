@@ -129,6 +129,7 @@ export const projects = [
         descrip: "A simple social media platform built for a hackathon, allowing users to create posts, delete them, and add likes. The project uses localStorage for user login, signup, and post persistence, making it fully functional without a backend. Designed with HTML, Tailwind CSS, JavaScript, and Lucide Icons, it delivers a clean and responsive interface while showcasing core frontend development skills.",
         lang: ["HTML", "Tailwind CSS", "JavaScript", "Lucide Icons", "LocalStorage"],
         projectLink: "https://hackthon-zaid-project.web.app/",
+        repoLink: "https://github.com/zaid-khan-code/The-Soical-Network",
         ani: "mafazaRight",
         devs: 1,
         took: "6 Hours"
@@ -139,6 +140,7 @@ export const projects = [
         descrip: "A simple Ecommerce web app built using Firebase Authentication, Firestore, and Vanilla JavaScript. This project allows users to sign up, log in, post ads, and browse listings — all with a clean responsive UI. The Sellin project replicates the core functionality of the Ecommerce marketplace — enabling users to buy and sell products through a Firebase-powered web interface. Users can create an account, log in, view listings, and add new products with image uploads and details.",
         lang: ["html", "CSS", "Tailwind Css", "Javascript", "Github", "firebase Auth", "Firebase Firestore"],
         projectLink: "https://sellin-code.web.app/",
+        repoLink: "https://github.com/zaid-khan-code/Sellin",
         ani: "mafazaRight",
         devs: 1,
         took: "5 Days"
@@ -149,6 +151,7 @@ export const projects = [
         descrip: "A dynamic Rock-Paper-Scissors browser game, showcasing responsive design, AI-assisted UI, and handcrafted HTML, CSS, JavaScript logic for interactive, enjoyable, and persistent user experiences.",
         lang: ["html", "CSS", "Javascript", "Github"],
         projectLink: "https://rock-paper-scissors-a.netlify.app/",
+        repoLink: "https://github.com/zaid-khan-code/Advance-Rock-Paper-Scissors-Game",
         ani: "mafazaLeft",
         devs: 1,
         took: "3 Days"
@@ -159,6 +162,7 @@ export const projects = [
         descrip: "A responsive coin-flip game demonstrating interactive front-end design, featuring AI-assisted UI with handcrafted HTML, CSS, and JavaScript logic for real-time results, smooth animations, and persistent tracking.",
         lang: ["HTML", "CSS", "JavaScript", "Github"],
         projectLink: "https://head-tail-a.netlify.app/",
+        repoLink: "https://github.com/zaid-khan-code/Advance-Heads-Tails-Game-main",
         took: "2 Days",
         devs: 1,
         ani: "mafazaDown"
@@ -169,6 +173,7 @@ export const projects = [
         descrip: "A comprehensive demonstration of responsive front-end engineering, utilizing only native HTML and pure CSS to perfectly emulate the global streaming service user interface.",
         lang: ["HTML", "CSS", "Github"],
         projectLink: "https://solo-dev-clone.netlify.app/",
+        repoLink: "https://github.com/zaid-khan-code/Netflix",
         took: "7 Days",
         devs: 1,
         ani: "mafazaRight"
@@ -179,6 +184,7 @@ export const projects = [
         descrip: "Devago is a responsive, lightweight starter kit built entirely with pure HTML and CSS, offering developers a structured, scalable foundation to efficiently launch and develop web applications.",
         lang: ["HTML", "CSS", "Github"],
         projectLink: "https://devago-solo-dev.netlify.app/",
+        repoLink: "https://github.com/zaid-khan-code/Devago",
         took: "6 Days",
         devs: 1,
         ani: "mafazaLeft"
@@ -189,6 +195,7 @@ export const projects = [
         descrip: "Portfolio is a responsive, versatile starter project built with pure HTML, CSS, and JavaScript. This project was fully generated with the assistance of AI, without any manually written code, showcasing the power of AI-driven development in creating professional, interactive, and visually engaging personal websites, resumes, and portfolios.",
         lang: ["HTML", "CSS", "Github"],
         projectLink: "https://my-portfolio-codes.netlify.app/",
+        repoLink: "https://github.com/zaid-khan-code/Portfolio",
         took: "2 Days",
         ani: "mafazaDown",
         devs: 1,
